@@ -1,0 +1,515 @@
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.exe
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.pdb
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.BonusSkins.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csprojResolveAssemblyReference.cache
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmMain.resources
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.Properties.Resources.resources
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.GenerateResource.Cache
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe.licenses
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.pdb
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmLogin.resources
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Images.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.xml
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+F:\DevExpress Demo\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.pdb
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csprojResolveAssemblyReference.cache
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmMain.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmLogin.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.Properties.Resources.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.GenerateResource.Cache
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe.licenses
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.exe
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.pdb
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.BonusSkins.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Images.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.Dialogs.v18.1.Core.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraDialogs.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucDoiMatKhau.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.nv.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinKhachHang.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinNguoiThan.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyThongTinNhanVien.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinNhanVien.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraWizard.v18.1.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\DevExpress.XtraWizard.v18.1.xml
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraWizard.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraWizard.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraWizard.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraWizard.v18.1.resources.dll
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinCaNhan.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyThongTinKhachHang.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.test.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinChinhSachBaoHiem.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucTkThongTin.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucHopDong.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinChuKyThanhToan.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinGoiHopDong.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucTkKhachHang.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyCapDoKH.resources
+F:\anh vui\QuanLyBaoHiem\QuanLyBaoHiem\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyChucVuNV.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.exe
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.pdb
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.BonusSkins.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Dialogs.v18.1.Core.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Images.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraDialogs.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraWizard.v18.1.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraWizard.v18.1.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.xml
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraNavBar.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraNavBar.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraWizard.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraWizard.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraWizard.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraWizard.v18.1.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csprojAssemblyReference.cache
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmMain.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmLogin.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.nv.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.Properties.Resources.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.test.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyCapDoKH.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyChucVuNV.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucTkThongTin.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucHopDong.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyThongTinKhachHang.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinCaNhan.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucDoiMatKhau.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyThongTinNhanVien.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinChinhSachBaoHiem.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinChuKyThanhToan.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinGoiHopDong.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinKhachHang.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinNguoiThan.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinNhanVien.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucTkKhachHang.resources
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe.licenses
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.CopyComplete
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe
+C:\Users\Admin\Downloads\Compressed\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.pdb
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.exe.config
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.exe
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\QuanLyBaoHiem.pdb
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.BonusSkins.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Dialogs.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Images.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraDialogs.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraWizard.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\EntityFramework.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\EntityFramework.SqlServer.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Data.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraBars.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraNavBar.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraWizard.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\EntityFramework.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\EntityFramework.SqlServer.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Office.v18.1.Core.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraNavBar.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraNavBar.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraWizard.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraWizard.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraWizard.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraWizard.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmMain.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormThemNhanVien.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.frmLogin.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.Properties.Resources.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyCapDoKH.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyChucVuNV.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyThongTinNhanVien.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucHopDong.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanLyThongTinKhachHang.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinCaNhan.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucDoiMatKhau.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinChinhSachBaoHiem.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongTinChuKyThanhToan.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.GenerateResource.cache
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe.licenses
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.CoreCompileInputs.cache
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csproj.CopyComplete
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.exe
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.pdb
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Charts.v18.1.Core.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraCharts.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraCharts.v18.1.UI.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraCharts.v18.1.Wizard.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.UI.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraVerticalGrid.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraRichEdit.v18.1.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraCharts.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraCharts.v18.1.UI.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraCharts.v18.1.Wizard.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.Utils.v18.1.UI.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraVerticalGrid.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\DevExpress.XtraRichEdit.v18.1.xml
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraCharts.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraCharts.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraCharts.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraCharts.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.Utils.v18.1.UI.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.Utils.v18.1.UI.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.Utils.v18.1.UI.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.Utils.v18.1.UI.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\de\DevExpress.XtraRichEdit.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\es\DevExpress.XtraRichEdit.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ja\DevExpress.XtraRichEdit.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ru\DevExpress.XtraRichEdit.v18.1.resources.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormDoanhthutest.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.SuaCapDoKH.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucNguoiThanKhachHang.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThemNT.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThemKH.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThemCKTT.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongBaoSinhNhat.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThongBao.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucBirthday.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongBaoDongHoaDon.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThongBaoHopDongForm.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucThongBaoHopDong.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ucQuanlyCapdo.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThemCapDo.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThemGoiHD.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.ThemHopDong.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormQuenMatKhau.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormImportExcel.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\Excel.4.5.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormSetNVQLcon.resources
+H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csprojAssemblyReference.cache
