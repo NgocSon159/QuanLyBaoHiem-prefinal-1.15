@@ -12,6 +12,7 @@ using QuanLyBaoHiem.Models;
 using QuanLyBaoHiem.DAO;
 using System.IO;
 using STSShop.Common;
+using System.Diagnostics;
 
 namespace QuanLyBaoHiem
 {
@@ -193,6 +194,14 @@ namespace QuanLyBaoHiem
         {
             FormQuenMatKhau f = new FormQuenMatKhau();
             f.ShowDialog();
+        }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            foreach (var process in Process.GetProcessesByName("QuanLyBaoHiem"))
+            {
+                process.Kill();
+            }
         }
     }
 }

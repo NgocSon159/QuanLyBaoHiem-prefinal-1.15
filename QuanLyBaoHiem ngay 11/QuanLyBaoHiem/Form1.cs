@@ -4,6 +4,7 @@ using DevExpress.XtraEditors;
 using QuanLyBaoHiem;
 using DevExpress.XtraTab;
 using QuanLyBaoHiem.DAO;
+using System.Diagnostics;
 
 namespace QuanLyBaoHiem
 {
@@ -109,6 +110,14 @@ namespace QuanLyBaoHiem
             {
                 e.Cancel = true;
             }
+            else
+            {
+                foreach (var process in Process.GetProcessesByName("QuanLyBaoHiem"))
+                {
+                    process.Kill();
+                }
+            }
+            
         }
         private void btnLogin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
