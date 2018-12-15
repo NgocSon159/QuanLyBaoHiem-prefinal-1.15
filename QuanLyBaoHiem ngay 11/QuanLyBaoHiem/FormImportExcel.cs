@@ -9,14 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QuanLyBaoHiem.Linhtinh;
+using QuanLyBaoHiem.DAO;
 
 namespace QuanLyBaoHiem
 {
     public partial class FormImportExcel : DevExpress.XtraEditors.XtraForm
     {
-        public FormImportExcel()
+        string manvhientai = "";
+        public FormImportExcel(string manv)
         {
             InitializeComponent();
+            thembangtuongung(manv);
+            manvhientai = manv;
         }
 
         private void labelControl1_Click(object sender, EventArgs e)
@@ -24,6 +28,29 @@ namespace QuanLyBaoHiem
 
         }
 
+        public void thembangtuongung(string manv)
+        {
+            NhanvienDao nvdao = new NhanvienDao();
+            string macv=nvdao.getchucvutunhanvien(manv);
+            if(macv=="QL")
+            {
+                cboTenBang.Properties.Items.Add("Nhân viên");
+            }
+            else
+            {
+                if(macv=="TP")
+                {
+                    cboTenBang.Properties.Items.Add("Nhân viên");
+                }
+                else
+                {
+                    
+                    cboTenBang.Properties.Items.Add("Khách hàng");
+                    cboTenBang.Properties.Items.Add("Hợp đồng");
+
+                }
+            }
+        }
 
         //Xuất file mẫu
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -73,19 +100,19 @@ namespace QuanLyBaoHiem
                 if (cboTenBang.SelectedIndex == 0)
                 {
                     ImportExcel xuatfile = new ImportExcel();
-                    xuatfile.importfileExcel("NhanVien");
+                    xuatfile.importfileExcel("NhanVien",manvhientai);
                 }
                 else
                 {
                     if (cboTenBang.SelectedIndex == 1)
                     {
                         ImportExcel xuatfile = new ImportExcel();
-                        xuatfile.importfileExcel("KhachHang");
+                        xuatfile.importfileExcel("KhachHang","");
                     }
                     else
                     {
                         ImportExcel xuatfile = new ImportExcel();
-                        xuatfile.importfileExcel("HopDong");
+                        xuatfile.importfileExcel("HopDong","");
 
                     }
                 }

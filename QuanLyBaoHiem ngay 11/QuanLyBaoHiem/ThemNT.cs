@@ -64,9 +64,12 @@ namespace QuanLyBaoHiem
                 }
                 f.refresh();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Đã có lỗi xảy ra");
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
         }
 

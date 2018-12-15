@@ -362,47 +362,55 @@ namespace QuanLyBaoHiem
         {
             try
             {
-                using (SaveFileDialog saveDialog = new SaveFileDialog())
+                if(gridView1.RowCount>0)
                 {
-                    saveDialog.Filter = "Excel (2003)(.xls)|*.xls|Excel (2010) (.xlsx)|*.xlsx ";
-                    if (saveDialog.ShowDialog() != DialogResult.Cancel)
+                    using (SaveFileDialog saveDialog = new SaveFileDialog())
                     {
-                        string exportFilePath = saveDialog.FileName;
-                        string fileExtenstion = new FileInfo(exportFilePath).Extension;
-
-                        switch (fileExtenstion)
+                        saveDialog.Filter = "Excel (2003)(.xls)|*.xls|Excel (2010) (.xlsx)|*.xlsx ";
+                        if (saveDialog.ShowDialog() != DialogResult.Cancel)
                         {
-                            case ".xls":
-                                gridView1.ExportToXls(exportFilePath);
-                                break;
-                            case ".xlsx":
-                                gridView1.ExportToXlsx(exportFilePath);
-                                break;
-                            
-                            default:
-                                break;
-                        }
+                            string exportFilePath = saveDialog.FileName;
+                            string fileExtenstion = new FileInfo(exportFilePath).Extension;
 
-                        if (File.Exists(exportFilePath))
-                        {
-                            try
+                            switch (fileExtenstion)
                             {
-                                //Thử mở file và để chương trình chọn cách để export.
-                                System.Diagnostics.Process.Start(exportFilePath);
+                                case ".xls":
+                                    gridView1.ExportToXls(exportFilePath);
+                                    break;
+                                case ".xlsx":
+                                    gridView1.ExportToXlsx(exportFilePath);
+                                    break;
+
+                                default:
+                                    break;
                             }
-                            catch
+
+                            if (File.Exists(exportFilePath))
                             {
-                                String msg = "Không thể mở file." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
+                                try
+                                {
+                                    //Thử mở file và để chương trình chọn cách để export.
+                                    System.Diagnostics.Process.Start(exportFilePath);
+                                }
+                                catch
+                                {
+                                    String msg = "Không thể mở file." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
+                                    MessageBox.Show(msg, "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            else
+                            {
+                                String msg = "File không thể lưu." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
                                 MessageBox.Show(msg, "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
-                        else
-                        {
-                            String msg = "File không thể lưu." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
-                            MessageBox.Show(msg, "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
                     }
                 }
+                else
+                {
+                    XtraMessageBox.Show("Không có gì để export!!!");
+                }
+                
 
             }
             catch (Exception ex)

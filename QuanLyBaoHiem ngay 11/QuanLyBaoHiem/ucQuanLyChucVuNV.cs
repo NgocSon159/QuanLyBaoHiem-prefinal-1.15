@@ -120,8 +120,7 @@ namespace QuanLyBaoHiem
                 if(nvdao.checkxemconhanviennaoconchiuqlcuaTP(txtMaNV.Text)==1)
                 {
                     XtraMessageBox.Show("Bạn phải chuyển nhân viên quản lý cho những nhân viên được thay đổi!!");
-                    FormSetNVQLcon fcon = new FormSetNVQLcon(txtMaNV.Text,this);
-                    fcon.ShowDialog();
+                    
                 }
                 else
                 {
@@ -171,7 +170,7 @@ namespace QuanLyBaoHiem
             txtTenNV.Text = "";
             cboTenCV.Text = "";
             cboMaNVQL.Text = "";
-
+            btnChuyenNVcuaTruongPhong.Visible = false;
             disabletextbox();
         }
 
@@ -215,14 +214,21 @@ namespace QuanLyBaoHiem
             //Trưởng phòng xuống nhân viên
             if(macvhientai=="TP" && cboTenCV.SelectedIndex==0)
             {
+                NhanvienDao nvdao = new NhanvienDao();
                 cboMaNVQL.Enabled = true;
                 loadlaicomboboxMaNVQL();
+                if(nvdao.checkxemconhanviennaoconchiuqlcuaTP(txtMaNV.Text)!=0)
+                {
+                    btnChuyenNVcuaTruongPhong.Visible = true;
+                }
+                
             }
 
             if(macvhientai == "TP" && cboTenCV.SelectedIndex == 1)
             {
                 cboMaNVQL.Enabled = false;
                 cboMaNVQL.Text= gridView2.GetFocusedRowCellValue(colMaNVQL).ToString();
+                btnChuyenNVcuaTruongPhong.Visible = false;
             }
 
             //Nhân viên lên trưởng phòng
@@ -239,6 +245,12 @@ namespace QuanLyBaoHiem
         private void simpleButton1_Click_1(object sender, EventArgs e)
         {
             textEdit1.Text = "";
+        }
+
+        private void btnChuyenNVcuaTruongPhong_Click(object sender, EventArgs e)
+        {
+            FormSetNVQLcon fcon = new FormSetNVQLcon(txtMaNV.Text, this);
+            fcon.ShowDialog();
         }
     }
 }

@@ -512,4 +512,3 @@ H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormImportExcel.r
 H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\Excel.4.5.dll
 H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\bin\Debug\ICSharpCode.SharpZipLib.dll
 H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.FormSetNVQLcon.resources
-H:\QuanLyBaoHiem ngay 11\QuanLyBaoHiem\obj\Debug\QuanLyBaoHiem.csprojAssemblyReference.cache

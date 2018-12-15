@@ -301,7 +301,7 @@ namespace QuanLyBaoHiem
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FormImportExcel f = new FormImportExcel();
+            FormImportExcel f = new FormImportExcel(taikhoanhientai);
             f.ShowDialog();
         }
 

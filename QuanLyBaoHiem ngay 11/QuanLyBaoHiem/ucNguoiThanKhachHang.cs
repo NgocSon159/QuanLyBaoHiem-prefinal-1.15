@@ -262,7 +262,10 @@ namespace QuanLyBaoHiem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Chọn Khách Hàng Cần Sửa");
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
         }
 

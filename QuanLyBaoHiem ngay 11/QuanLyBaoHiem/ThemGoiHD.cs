@@ -39,27 +39,38 @@ namespace QuanLyBaoHiem
 
         private void btn_luu_Click(object sender, EventArgs e)
         {
-            if (txtMaGHD.Text == "" || txtMucPhi.Text == "" || txtGiaTriBaoHiem.Text == "" ||
-                    txtThoiHanBaoHiem.Text == "" || txtThoiHanDongPhi.Text == "")
-                XtraMessageBox.Show("Điền đầy đủ thông tin", "Thông báo");
-            else
+            try
             {
 
-                GoiHopDongDao ghd = new GoiHopDongDao();
-                if (ghd.checkxemmaGHDtontai(txtMaGHD.Text) == 0)
-                {
-                    ghd.ThemGHD(txtMaGHD.Text, Convert.ToDecimal(txtMucPhi.Text), Convert.ToDecimal(txtGiaTriBaoHiem.Text), Convert.ToInt32(txtThoiHanBaoHiem.Text), Convert.ToInt32(txtThoiHanDongPhi.Text));
-                    XtraMessageBox.Show("Thêm thành công", "Thông báo");
-                    f.refreshdata();
-                    this.Close();
-                }
+
+                if (txtMaGHD.Text == "" || txtMucPhi.Text == "" || txtGiaTriBaoHiem.Text == "" ||
+                        txtThoiHanBaoHiem.Text == "" || txtThoiHanDongPhi.Text == "")
+                    XtraMessageBox.Show("Điền đầy đủ thông tin", "Thông báo");
                 else
                 {
-                    XtraMessageBox.Show("Mã nhập vào đã có sẵn!!");
+
+                    GoiHopDongDao ghd = new GoiHopDongDao();
+                    if (ghd.checkxemmaGHDtontai(txtMaGHD.Text) == 0)
+                    {
+                        ghd.ThemGHD(txtMaGHD.Text, Convert.ToDecimal(txtMucPhi.Text), Convert.ToDecimal(txtGiaTriBaoHiem.Text), Convert.ToInt32(txtThoiHanBaoHiem.Text), Convert.ToInt32(txtThoiHanDongPhi.Text));
+                        XtraMessageBox.Show("Thêm thành công", "Thông báo");
+                        f.refreshdata();
+                        this.Close();
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Mã nhập vào đã có sẵn!!");
+                    }
+
                 }
-
             }
-
+            catch (Exception ex)
+            {
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
+            }
 
 
 

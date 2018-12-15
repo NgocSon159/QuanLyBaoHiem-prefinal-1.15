@@ -51,10 +51,6 @@
             this.cboTenBang.Name = "cboTenBang";
             this.cboTenBang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboTenBang.Properties.Items.AddRange(new object[] {
-            "Nhân viên",
-            "Khách hàng",
-            "Hợp đồng"});
             this.cboTenBang.Size = new System.Drawing.Size(125, 22);
             this.cboTenBang.TabIndex = 1;
             // 

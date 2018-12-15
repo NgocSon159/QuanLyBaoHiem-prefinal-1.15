@@ -74,38 +74,50 @@ namespace QuanLyBaoHiem
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if(txtHoTenNV.Text == "" || txtemail.Text == "" || txtDiaChi.Text == "" || txtSdt.Text == "" || dtngaysinh.Text == "")
+            try
             {
-                XtraMessageBox.Show("Hãy điền đầy đủ thông tin!");
-            }
-            else
-            {
-                NhanVien nv = new NhanVien();
-                NhanvienDao nvdao = new NhanvienDao();
-                nv.MaNV = txtMaNV.Text;
 
-                string macv = db.ChucVus.Where(p => p.TenCV == cboQuyenHan.Text).Select(l => l.MaCV).SingleOrDefault();
-                nv.MaCV = macv;
-                nv.TenNV = txtHoTenNV.Text;
-                bool gioitinh = true;
-                if (cboGioiTinh.Text != "Nam")
+
+                if (txtHoTenNV.Text == "" || txtemail.Text == "" || txtDiaChi.Text == "" || txtSdt.Text == "" || dtngaysinh.Text == "")
                 {
-                    gioitinh = false;
+                    XtraMessageBox.Show("Hãy điền đầy đủ thông tin!");
                 }
-                nv.GioiTinh = gioitinh;
-                nv.NgaySinh = dtngaysinh.DateTime; ;
-                nv.MaNVQuanLi = txtMaNVQL.Text;
-                nv.DiaChi = txtDiaChi.Text;
-                nv.Sdt = txtSdt.Text; ;
-                nv.MatKhau = MahoaMD5.getMd5Hash("123456");
-                nv.Email = txtemail.Text;
-                nv.Status = true;
-                nvdao.themnhanvien(nv);
-                XtraMessageBox.Show("Thêm thành công");
-                f.loadlaigridview();
-                this.Close();
+                else
+                {
+                    NhanVien nv = new NhanVien();
+                    NhanvienDao nvdao = new NhanvienDao();
+                    nv.MaNV = txtMaNV.Text;
+
+                    string macv = db.ChucVus.Where(p => p.TenCV == cboQuyenHan.Text).Select(l => l.MaCV).SingleOrDefault();
+                    nv.MaCV = macv;
+                    nv.TenNV = txtHoTenNV.Text;
+                    bool gioitinh = true;
+                    if (cboGioiTinh.Text != "Nam")
+                    {
+                        gioitinh = false;
+                    }
+                    nv.GioiTinh = gioitinh;
+                    nv.NgaySinh = dtngaysinh.DateTime; ;
+                    nv.MaNVQuanLi = txtMaNVQL.Text;
+                    nv.DiaChi = txtDiaChi.Text;
+                    nv.Sdt = txtSdt.Text; ;
+                    nv.MatKhau = MahoaMD5.getMd5Hash("123456");
+                    nv.Email = txtemail.Text;
+                    nv.Status = true;
+                    nvdao.themnhanvien(nv);
+                    XtraMessageBox.Show("Thêm thành công");
+                    f.loadlaigridview();
+                    this.Close();
+                }
             }
-            
+            catch (Exception ex)
+            {
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
+            }
+
         }
 
         private void simpleButton5_Click(object sender, EventArgs e)

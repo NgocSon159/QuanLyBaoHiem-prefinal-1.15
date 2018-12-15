@@ -19,9 +19,10 @@ namespace QuanLyBaoHiem.Linhtinh
     class ImportExcel
     {
         QLBHContext db = new QLBHContext();
-        public void importfileExcel(string tenbang)
+        string manvhientai = "";
+        public void importfileExcel(string tenbang,string manv)
         {
-            
+            manvhientai = manv;
             ExcelSuport exsp = new ExcelSuport();
             List<string> tencot = exsp.LayTenCot(tenbang);
             try
@@ -57,59 +58,40 @@ namespace QuanLyBaoHiem.Linhtinh
                             }
                             else
                             {
-                                if(celldautien== "MaCV")
+                                if(celldautien== "TenNV")
                                 {
-                                    NhanvienDao nvd = new NhanvienDao();
-                                    if (nvd.checkmanvtontai(dr[0].ToString()) == 0)
-                                    {
-                                        this.ImportNV( dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(),
-                                            dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), Convert.ToDateTime(dr[7]));
-                                        excelReader.Close();
-                                        stream.Close();
+                                    this.ImportNV(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(),
+                                            dr[4].ToString(), Convert.ToDateTime(dr[5]));
+                                    excelReader.Close();
+                                    stream.Close();
 
-                                        XtraMessageBox.Show("Import file thành công", "Thông báo");
-                                    }
-                                    else
-                                    {
-                                        XtraMessageBox.Show("Mã nhân viên " + dr[0].ToString() + "đã có sẵn!!");
-                                    }
+                                    XtraMessageBox.Show("Import file thành công", "Thông báo");
                                 }
                                 else
                                 {
                                     if(celldautien == "MaCD")
                                     {
-                                        KhachHangDao khd = new KhachHangDao();
-                                        if(khd.checkmakhtontai(dr[0].ToString())==0)
-                                        {
-                                            this.ImportKH( dr[0].ToString(), dr[1].ToString(), Convert.ToDateTime(dr[2]), dr[3].ToString(),
+                                        this.ImportKH(dr[0].ToString(), dr[1].ToString(), Convert.ToDateTime(dr[2]), dr[3].ToString(),
                                             dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
-                                            excelReader.Close();
-                                            stream.Close();
+                                        excelReader.Close();
+                                        stream.Close();
 
-                                            XtraMessageBox.Show("Import file thành công", "Thông báo");
-                                        }
-                                        else
-                                        {
-                                            XtraMessageBox.Show("Mã khách hàng " + dr[0].ToString() + "đã có sẵn!!");
-                                        }
+                                        XtraMessageBox.Show("Import file thành công", "Thông báo");
+
+
+
                                     }
                                     else
                                     {
-                                        HopDongDao hdd = new HopDongDao();
-                                        if (hdd.checkmahdtontai(dr[0].ToString()) == 0)
-                                        {
+                                        this.ImportHD(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), Convert.ToDateTime(dr[4]));
+                                        excelReader.Close();
+                                        stream.Close();
+
+                                        XtraMessageBox.Show("Import file thành công", "Thông báo");
 
 
-                                            this.ImportHD( dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), Convert.ToDateTime(dr[4]));
-                                            excelReader.Close();
-                                            stream.Close();
 
-                                            XtraMessageBox.Show("Import file thành công", "Thông báo");
-                                        }
-                                        else
-                                        {
-                                            XtraMessageBox.Show("Mã hợp đồng " + dr[0].ToString() + "đã có sẵn!!");
-                                        }
+
                                     }
                                 }
                                 
@@ -125,18 +107,29 @@ namespace QuanLyBaoHiem.Linhtinh
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show("Có lỗi xảy ra, xin chọn lại!", "Thông báo");
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
         }
 
 
 
-        public void ImportNV( string macv, string tennv,string email, string sdt, string gioitinh, string diachi, string manvquanli, DateTime ngaysinh)
+        public void ImportNV( string tennv,string email, string sdt, string gioitinh, string diachi, DateTime ngaysinh)
         {
             NhanvienDao nvdao = new NhanvienDao();
             NhanVien nv = new NhanVien();
             nv.MaNV = nvdao.getlastnhanvien();
-            nv.MaCV = macv;
+            if(nvdao.getchucvutunhanvien(manvhientai)=="QL")
+            {
+                nv.MaCV = "TP";
+            }
+            else
+            {
+                nv.MaCV = "NV";
+            }
+            
             nv.TenNV = tennv;
             nv.Email = email;
             nv.Sdt = sdt;
@@ -147,7 +140,7 @@ namespace QuanLyBaoHiem.Linhtinh
             }
             nv.GioiTinh = gioitinhbool;
             nv.DiaChi = diachi;
-            nv.MaNVQuanLi = manvquanli;
+            nv.MaNVQuanLi = manvhientai;
             nv.MatKhau = MahoaMD5.getMd5Hash("123456");
             nv.NgaySinh = ngaysinh;
             nv.Status = true;
