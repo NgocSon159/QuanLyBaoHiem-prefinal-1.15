@@ -48,111 +48,119 @@
             // 
             // btnToday
             // 
-            this.btnToday.Location = new System.Drawing.Point(640, 31);
-            this.btnToday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnToday.AllowFocus = false;
+            this.btnToday.Location = new System.Drawing.Point(549, 25);
             this.btnToday.Name = "btnToday";
-            this.btnToday.Size = new System.Drawing.Size(87, 28);
+            this.btnToday.Size = new System.Drawing.Size(75, 23);
             this.btnToday.TabIndex = 1;
             this.btnToday.Text = "Hôm Nay";
             this.btnToday.Click += new System.EventHandler(this.btnToday_Click);
             // 
             // btnMonday
             // 
-            this.btnMonday.Location = new System.Drawing.Point(139, 82);
-            this.btnMonday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMonday.AllowFocus = false;
+            this.btnMonday.Location = new System.Drawing.Point(119, 67);
+            this.btnMonday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnMonday.Name = "btnMonday";
-            this.btnMonday.Size = new System.Drawing.Size(87, 54);
+            this.btnMonday.Size = new System.Drawing.Size(75, 44);
             this.btnMonday.TabIndex = 2;
             this.btnMonday.Text = "Thứ Hai";
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(248, 82);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton1.AllowFocus = false;
+            this.simpleButton1.Location = new System.Drawing.Point(213, 67);
+            this.simpleButton1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(87, 54);
+            this.simpleButton1.Size = new System.Drawing.Size(75, 44);
             this.simpleButton1.TabIndex = 3;
             this.simpleButton1.Text = "Thứ Ba";
             // 
             // btnWebnesday
             // 
-            this.btnWebnesday.Location = new System.Drawing.Point(358, 82);
-            this.btnWebnesday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnWebnesday.AllowFocus = false;
+            this.btnWebnesday.Location = new System.Drawing.Point(307, 67);
+            this.btnWebnesday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnWebnesday.Name = "btnWebnesday";
-            this.btnWebnesday.Size = new System.Drawing.Size(87, 54);
+            this.btnWebnesday.Size = new System.Drawing.Size(75, 44);
             this.btnWebnesday.TabIndex = 4;
             this.btnWebnesday.Text = "Thứ Tư";
+            this.btnWebnesday.Click += new System.EventHandler(this.btnWebnesday_Click);
             // 
             // btnThursday
             // 
-            this.btnThursday.Location = new System.Drawing.Point(468, 82);
-            this.btnThursday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThursday.AllowFocus = false;
+            this.btnThursday.Appearance.BackColor = System.Drawing.Color.LightPink;
+            this.btnThursday.Appearance.Options.UseBackColor = true;
+            this.btnThursday.Location = new System.Drawing.Point(401, 67);
+            this.btnThursday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnThursday.Name = "btnThursday";
-            this.btnThursday.Size = new System.Drawing.Size(87, 54);
+            this.btnThursday.Size = new System.Drawing.Size(75, 44);
             this.btnThursday.TabIndex = 5;
             this.btnThursday.Text = "Thứ Năm";
             // 
             // btnFriday
             // 
-            this.btnFriday.Location = new System.Drawing.Point(577, 82);
-            this.btnFriday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFriday.AllowFocus = false;
+            this.btnFriday.Location = new System.Drawing.Point(495, 67);
+            this.btnFriday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnFriday.Name = "btnFriday";
-            this.btnFriday.Size = new System.Drawing.Size(87, 54);
+            this.btnFriday.Size = new System.Drawing.Size(75, 44);
             this.btnFriday.TabIndex = 6;
             this.btnFriday.Text = "Thứ Sáu";
             // 
             // btnSaturday
             // 
-            this.btnSaturday.Location = new System.Drawing.Point(687, 82);
-            this.btnSaturday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSaturday.AllowFocus = false;
+            this.btnSaturday.Location = new System.Drawing.Point(589, 67);
+            this.btnSaturday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnSaturday.Name = "btnSaturday";
-            this.btnSaturday.Size = new System.Drawing.Size(87, 54);
+            this.btnSaturday.Size = new System.Drawing.Size(75, 44);
             this.btnSaturday.TabIndex = 7;
             this.btnSaturday.Text = "Thứ Bảy";
             // 
             // btnSunday
             // 
-            this.btnSunday.Location = new System.Drawing.Point(797, 82);
-            this.btnSunday.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSunday.AllowFocus = false;
+            this.btnSunday.Location = new System.Drawing.Point(683, 67);
+            this.btnSunday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnSunday.Name = "btnSunday";
-            this.btnSunday.Size = new System.Drawing.Size(87, 54);
+            this.btnSunday.Size = new System.Drawing.Size(75, 44);
             this.btnSunday.TabIndex = 8;
             this.btnSunday.Text = "Chủ Nhật";
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(24, 82);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPrevious.AllowFocus = false;
+            this.btnPrevious.Location = new System.Drawing.Point(21, 67);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(87, 54);
+            this.btnPrevious.Size = new System.Drawing.Size(75, 44);
             this.btnPrevious.TabIndex = 9;
             this.btnPrevious.Text = "Tháng Trước";
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(929, 82);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNext.AllowFocus = false;
+            this.btnNext.Location = new System.Drawing.Point(796, 67);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(87, 54);
+            this.btnNext.Size = new System.Drawing.Size(75, 44);
             this.btnNext.TabIndex = 10;
             this.btnNext.Text = "Tháng Sau";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(139, 181);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(119, 147);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(745, 367);
+            this.panel1.Size = new System.Drawing.Size(639, 298);
             this.panel1.TabIndex = 13;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(343, 30);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(294, 24);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker1.TabIndex = 14;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -170,7 +178,7 @@
             // 
             // ucThongBaoSinhNhat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
@@ -184,9 +192,9 @@
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.btnMonday);
             this.Controls.Add(this.btnToday);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ucThongBaoSinhNhat";
-            this.Size = new System.Drawing.Size(1031, 564);
+            this.Size = new System.Drawing.Size(884, 458);
+            this.Load += new System.EventHandler(this.ucThongBaoSinhNhat_Load);
             this.ResumeLayout(false);
 
         }

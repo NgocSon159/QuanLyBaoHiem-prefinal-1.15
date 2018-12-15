@@ -72,8 +72,42 @@ namespace QuanLyBaoHiem
             DateTime dateTime = DateTime.Parse(ngaysinh);
             txtNgaySinh.DateTime = dateTime;
 
+            enabletextbox();
+
             btnHuy.Visible = true;
             btnLuu.Visible = true;
+        }
+
+        public void enabletextbox()
+        {
+            txtDiaChi.Enabled = true;
+
+            txtMaKHNT.Enabled = true;
+            txtMaKH.Enabled = true;
+
+            txtTenNTKH.Enabled = true;
+            txtCMND.Enabled = true;
+            txtTenKH.Enabled = true;
+
+            txtNgaySinh.Enabled = true;
+            cboGioitinh.Enabled = true;
+            txtSDT.Enabled = true;
+        }
+
+        public void disabletextbox()
+        {
+            txtDiaChi.Enabled = false ;
+
+            txtMaKHNT.Enabled = false ;
+            txtMaKH.Enabled = false ;
+
+            txtTenNTKH.Enabled = false ;
+            txtCMND.Enabled = false ;
+            txtTenKH.Enabled = false ;
+
+            txtNgaySinh.Enabled = false ;
+            cboGioitinh.Enabled = false ;
+            txtSDT.Enabled = false ;
         }
 
         private void simpleButton6_Click(object sender, EventArgs e)
@@ -144,53 +178,7 @@ namespace QuanLyBaoHiem
         {
             txtTenKH.Text = txt;
         }
-        private void groupControl1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtMaKHNT_EditValueChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void txtMaKHNT_Enter(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void txtMaKH_Enter(object sender, EventArgs e)
-        {
-                
-        }
-
-        private void txtMaKH_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
-        {
-
-        }
-
-        private void txtMaKHNT_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtMaKHNT_Properties_DragEnter(object sender, DragEventArgs e)
-        {
-
-           
-        }
-
-        private void txtMaKHNT_Properties_Enter(object sender, EventArgs e)
-        {
-
-           
-        }
-
-        private void txtMaKHNT_Properties_EditValueChanged(object sender, EventArgs e)
-        {
-
-           
-        }
+        
 
         private void txtMaKHNT_Properties_KeyDown(object sender, KeyEventArgs e)
         {
@@ -301,7 +289,7 @@ namespace QuanLyBaoHiem
         {
             btnHuy.Visible = false;
             btnLuu.Visible = false;
-
+            disabletextbox();
             txtDiaChi.Text = "";
             txtMaNT.Text = "";
             txtMaKHNT.Text = "";
@@ -319,6 +307,8 @@ namespace QuanLyBaoHiem
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             this.refresh();
+            disabletextbox();
+            resettext();
         }
     }
 }

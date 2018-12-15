@@ -1,7 +1,9 @@
-﻿using QuanLyBaoHiem.Models;
+﻿using DevExpress.XtraEditors;
+using QuanLyBaoHiem.Models;
 using STSShop.Common;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,10 +42,8 @@ namespace QuanLyBaoHiem.DAO
             nv.MaNVQuanLi = manvql;
             nv.DiaChi = diachi;
             nv.Sdt = sdt;
-            
-            db.SaveChanges();
-            
 
+            db.SaveChanges();
         }
         public string getlastnhanvien()
         {

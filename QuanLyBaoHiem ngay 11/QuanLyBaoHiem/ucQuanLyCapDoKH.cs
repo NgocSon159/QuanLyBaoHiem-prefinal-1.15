@@ -63,6 +63,7 @@ namespace QuanLyBaoHiem
             txtTenKH.Text = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "TenKH").ToString();
             txtMaKH.Text = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "MaKH").ToString();
             txtTenCV.Text = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "CapDo.TenCD").ToString();
+            cboMaCV.Enabled = true;
 
             btnHuy.Visible = true;
             btnLuu.Visible = true;
@@ -85,6 +86,7 @@ namespace QuanLyBaoHiem
             btnHuy.Visible = false;
             btnLuu.Visible = false;
 
+            cboMaCV.Enabled = false;
             cboMaCV.Text = "";
             txtMaKH.Text = "";
             txtTenCV.Text = "";

@@ -57,13 +57,13 @@ namespace QuanLyBaoHiem.Linhtinh
                             }
                             else
                             {
-                                if(celldautien== "Mã NV")
+                                if(celldautien== "MaCV")
                                 {
                                     NhanvienDao nvd = new NhanvienDao();
                                     if (nvd.checkmanvtontai(dr[0].ToString()) == 0)
                                     {
-                                        this.ImportNV(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(),
-                                            dr[5].ToString(), dr[6].ToString(), dr[7].ToString(), Convert.ToDateTime(dr[8]));
+                                        this.ImportNV( dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(),
+                                            dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), Convert.ToDateTime(dr[7]));
                                         excelReader.Close();
                                         stream.Close();
 
@@ -76,13 +76,13 @@ namespace QuanLyBaoHiem.Linhtinh
                                 }
                                 else
                                 {
-                                    if(celldautien == "MaKH")
+                                    if(celldautien == "MaCD")
                                     {
                                         KhachHangDao khd = new KhachHangDao();
                                         if(khd.checkmakhtontai(dr[0].ToString())==0)
                                         {
-                                            this.ImportKH(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), Convert.ToDateTime(dr[3]), dr[4].ToString(),
-                                            dr[5].ToString(), dr[6].ToString(), dr[7].ToString());
+                                            this.ImportKH( dr[0].ToString(), dr[1].ToString(), Convert.ToDateTime(dr[2]), dr[3].ToString(),
+                                            dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
                                             excelReader.Close();
                                             stream.Close();
 
@@ -100,7 +100,7 @@ namespace QuanLyBaoHiem.Linhtinh
                                         {
 
 
-                                            this.ImportHD(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), Convert.ToDateTime(dr[5]));
+                                            this.ImportHD( dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), Convert.ToDateTime(dr[4]));
                                             excelReader.Close();
                                             stream.Close();
 
@@ -131,10 +131,11 @@ namespace QuanLyBaoHiem.Linhtinh
 
 
 
-        public void ImportNV(string manv, string macv, string tennv,string email, string sdt, string gioitinh, string diachi, string manvquanli, DateTime ngaysinh)
+        public void ImportNV( string macv, string tennv,string email, string sdt, string gioitinh, string diachi, string manvquanli, DateTime ngaysinh)
         {
+            NhanvienDao nvdao = new NhanvienDao();
             NhanVien nv = new NhanVien();
-            nv.MaNV = manv;
+            nv.MaNV = nvdao.getlastnhanvien();
             nv.MaCV = macv;
             nv.TenNV = tennv;
             nv.Email = email;
@@ -154,10 +155,11 @@ namespace QuanLyBaoHiem.Linhtinh
             db.SaveChanges();
         }
 
-        public void ImportKH(string MaKH, string MaCD, string TenKH, DateTime ngaysinh, string gioitinh, string Diachi, string sdt, string cmnd)
+        public void ImportKH( string MaCD, string TenKH, DateTime ngaysinh, string gioitinh, string Diachi, string sdt, string cmnd)
         {
+            KhachHangDao khdao = new KhachHangDao();
             KhachHang kh = new KhachHang();
-            kh.MaKH = MaKH;
+            kh.MaKH = khdao.getlastkhachhang();
             kh.MaCD = MaCD;
             kh.TenKH = TenKH;
             kh.NgaySinh = ngaysinh;
@@ -177,10 +179,12 @@ namespace QuanLyBaoHiem.Linhtinh
             db.SaveChanges();
         }
 
-        public void ImportHD(string MaHD, string MaGHD, string MaCK, string MaNV, string MaKH, DateTime NgayHL)
+        public void ImportHD( string MaGHD, string MaCK, string MaNV, string MaKH, DateTime NgayHL)
         {
+            HopDongDao hddao = new HopDongDao();
+
             HopDong hd = new HopDong();
-            hd.MaHD = MaHD;
+            hd.MaHD = hddao.getlasthopdong();
             hd.MaGoiHD = MaGHD;
             hd.MaChuKy = MaCK;
             hd.MaNV = MaNV;

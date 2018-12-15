@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucThongBaoSinhNhat));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucThongBaoDongHoaDon));
             this.btnToday = new DevExpress.XtraEditors.SimpleButton();
             this.btnMonday = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -48,6 +48,7 @@
             // 
             // btnToday
             // 
+            this.btnToday.AllowFocus = false;
             this.btnToday.Location = new System.Drawing.Point(549, 25);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(75, 23);
@@ -57,7 +58,9 @@
             // 
             // btnMonday
             // 
+            this.btnMonday.AllowFocus = false;
             this.btnMonday.Location = new System.Drawing.Point(119, 67);
+            this.btnMonday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnMonday.Name = "btnMonday";
             this.btnMonday.Size = new System.Drawing.Size(75, 44);
             this.btnMonday.TabIndex = 2;
@@ -65,7 +68,9 @@
             // 
             // simpleButton1
             // 
+            this.simpleButton1.AllowFocus = false;
             this.simpleButton1.Location = new System.Drawing.Point(213, 67);
+            this.simpleButton1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(75, 44);
             this.simpleButton1.TabIndex = 3;
@@ -73,7 +78,9 @@
             // 
             // btnWebnesday
             // 
+            this.btnWebnesday.AllowFocus = false;
             this.btnWebnesday.Location = new System.Drawing.Point(307, 67);
+            this.btnWebnesday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnWebnesday.Name = "btnWebnesday";
             this.btnWebnesday.Size = new System.Drawing.Size(75, 44);
             this.btnWebnesday.TabIndex = 4;
@@ -81,7 +88,11 @@
             // 
             // btnThursday
             // 
+            this.btnThursday.AllowFocus = false;
+            this.btnThursday.Appearance.BackColor = System.Drawing.Color.LightPink;
+            this.btnThursday.Appearance.Options.UseBackColor = true;
             this.btnThursday.Location = new System.Drawing.Point(401, 67);
+            this.btnThursday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnThursday.Name = "btnThursday";
             this.btnThursday.Size = new System.Drawing.Size(75, 44);
             this.btnThursday.TabIndex = 5;
@@ -89,7 +100,9 @@
             // 
             // btnFriday
             // 
+            this.btnFriday.AllowFocus = false;
             this.btnFriday.Location = new System.Drawing.Point(495, 67);
+            this.btnFriday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnFriday.Name = "btnFriday";
             this.btnFriday.Size = new System.Drawing.Size(75, 44);
             this.btnFriday.TabIndex = 6;
@@ -97,7 +110,9 @@
             // 
             // btnSaturday
             // 
+            this.btnSaturday.AllowFocus = false;
             this.btnSaturday.Location = new System.Drawing.Point(589, 67);
+            this.btnSaturday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnSaturday.Name = "btnSaturday";
             this.btnSaturday.Size = new System.Drawing.Size(75, 44);
             this.btnSaturday.TabIndex = 7;
@@ -105,7 +120,9 @@
             // 
             // btnSunday
             // 
+            this.btnSunday.AllowFocus = false;
             this.btnSunday.Location = new System.Drawing.Point(683, 67);
+            this.btnSunday.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.btnSunday.Name = "btnSunday";
             this.btnSunday.Size = new System.Drawing.Size(75, 44);
             this.btnSunday.TabIndex = 8;
@@ -113,6 +130,7 @@
             // 
             // btnPrevious
             // 
+            this.btnPrevious.AllowFocus = false;
             this.btnPrevious.Location = new System.Drawing.Point(21, 67);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(75, 44);
@@ -122,6 +140,7 @@
             // 
             // btnNext
             // 
+            this.btnNext.AllowFocus = false;
             this.btnNext.Location = new System.Drawing.Point(796, 67);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 44);
@@ -131,6 +150,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(119, 147);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(639, 298);
@@ -156,7 +176,7 @@
             this.notifyIcon.Text = "notifyIcon1";
             this.notifyIcon.Visible = true;
             // 
-            // ucThongBaoSinhNhat
+            // ucThongBaoDongHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +192,7 @@
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.btnMonday);
             this.Controls.Add(this.btnToday);
-            this.Name = "ucThongBaoSinhNhat";
+            this.Name = "ucThongBaoDongHoaDon";
             this.Size = new System.Drawing.Size(884, 458);
             this.ResumeLayout(false);
 

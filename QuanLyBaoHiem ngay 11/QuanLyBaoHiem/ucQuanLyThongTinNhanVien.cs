@@ -12,6 +12,7 @@ using System.Data.Entity;
 using QuanLyBaoHiem.Models;
 using QuanLyBaoHiem.DAO;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace QuanLyBaoHiem
 {
@@ -186,19 +187,29 @@ namespace QuanLyBaoHiem
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            
-            NhanvienDao nvdao = new NhanvienDao();
-            bool gioitinh = true;
-            if(cboGioiTinh.SelectedIndex==1)
+            try
             {
-                gioitinh = false;
-            }
-            string macv = listchucvu.Where(p => p.TenCV == cboQuyenHan.Text).Select(l => l.MaCV).SingleOrDefault();
-            
-            nvdao.suanhanvien(txtMaNV.Text, macv, txtHoTenNV.Text, txtSdt.Text, gioitinh, txtDiaChi.Text, cboMaNVQL.Text, dtngaysinh.DateTime);
+                NhanvienDao nvdao = new NhanvienDao();
+                bool gioitinh = true;
+                if (cboGioiTinh.SelectedIndex == 1)
+                {
+                    gioitinh = false;
+                }
+                string macv = listchucvu.Where(p => p.TenCV == cboQuyenHan.Text).Select(l => l.MaCV).SingleOrDefault();
 
-            XtraMessageBox.Show("Đã sửa thành công!!");
-            loadlaigridview();
+                nvdao.suanhanvien(txtMaNV.Text, macv, txtHoTenNV.Text, txtSdt.Text, gioitinh, txtDiaChi.Text, cboMaNVQL.Text, dtngaysinh.DateTime);
+
+                XtraMessageBox.Show("Đã sửa thành công!!");
+                loadlaigridview();
+            }
+
+            catch (Exception ex)
+            {
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
+            }
         }
 
         private void btnThemNV_Click(object sender, EventArgs e)

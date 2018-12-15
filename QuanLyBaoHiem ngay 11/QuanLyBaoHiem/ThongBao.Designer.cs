@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -36,13 +35,6 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(326, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePicker1.TabIndex = 0;
             // 
             // panel1
             // 
@@ -101,7 +93,6 @@
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl3);
@@ -113,8 +104,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;

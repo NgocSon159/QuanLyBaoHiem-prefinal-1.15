@@ -351,7 +351,7 @@
             this.groupControl1.Size = new System.Drawing.Size(846, 258);
             this.groupControl1.TabIndex = 10;
             this.groupControl1.Text = "Điền các thông tin";
-            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            
             // 
             // labelControl5
             // 
@@ -364,6 +364,7 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.Enabled = false;
             this.txtSDT.Location = new System.Drawing.Point(581, 184);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSDT.Name = "txtSDT";
@@ -389,6 +390,7 @@
             // txtNgaySinh
             // 
             this.txtNgaySinh.EditValue = null;
+            this.txtNgaySinh.Enabled = false;
             this.txtNgaySinh.Location = new System.Drawing.Point(581, 106);
             this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNgaySinh.Name = "txtNgaySinh";
@@ -423,6 +425,7 @@
             // 
             // cboGioitinh
             // 
+            this.cboGioitinh.Enabled = false;
             this.cboGioitinh.Location = new System.Drawing.Point(580, 143);
             this.cboGioitinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboGioitinh.Name = "cboGioitinh";
@@ -437,6 +440,7 @@
             // 
             // txtTenNTKH
             // 
+            this.txtTenNTKH.Enabled = false;
             this.txtTenNTKH.Location = new System.Drawing.Point(254, 183);
             this.txtTenNTKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenNTKH.Name = "txtTenNTKH";
@@ -456,18 +460,19 @@
             // 
             // txtMaKHNT
             // 
+            this.txtMaKHNT.Enabled = false;
             this.txtMaKHNT.Location = new System.Drawing.Point(254, 70);
             this.txtMaKHNT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaKHNT.Name = "txtMaKHNT";
-            this.txtMaKHNT.Properties.EditValueChanged += new System.EventHandler(this.txtMaKHNT_Properties_EditValueChanged);
-            this.txtMaKHNT.Properties.DragEnter += new System.Windows.Forms.DragEventHandler(this.txtMaKHNT_Properties_DragEnter);
-            this.txtMaKHNT.Properties.Enter += new System.EventHandler(this.txtMaKHNT_Properties_Enter);
+            
+            
+            
             this.txtMaKHNT.Properties.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaKHNT_Properties_KeyDown);
             this.txtMaKHNT.Size = new System.Drawing.Size(216, 22);
             this.txtMaKHNT.TabIndex = 35;
-            this.txtMaKHNT.EditValueChanged += new System.EventHandler(this.txtMaKHNT_EditValueChanged);
-            this.txtMaKHNT.TextChanged += new System.EventHandler(this.txtMaKHNT_TextChanged);
-            this.txtMaKHNT.Enter += new System.EventHandler(this.txtMaKHNT_Enter);
+            
+            
+            
             // 
             // labelControl16
             // 
@@ -546,6 +551,7 @@
             // 
             // txtCMND
             // 
+            this.txtCMND.Enabled = false;
             this.txtCMND.Location = new System.Drawing.Point(581, 42);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCMND.Name = "txtCMND";
@@ -556,6 +562,7 @@
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.Enabled = false;
             this.txtDiaChi.Location = new System.Drawing.Point(580, 74);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiaChi.Name = "txtDiaChi";
@@ -564,6 +571,7 @@
             // 
             // txtTenKH
             // 
+            this.txtTenKH.Enabled = false;
             this.txtTenKH.Location = new System.Drawing.Point(254, 105);
             this.txtTenKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenKH.Name = "txtTenKH";
@@ -574,6 +582,7 @@
             // 
             // txtMaKH
             // 
+            this.txtMaKH.Enabled = false;
             this.txtMaKH.Location = new System.Drawing.Point(254, 142);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaKH.Name = "txtMaKH";
@@ -582,8 +591,8 @@
             this.txtMaKH.Properties.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaKH_Properties_KeyDown);
             this.txtMaKH.Size = new System.Drawing.Size(216, 22);
             this.txtMaKH.TabIndex = 1;
-            this.txtMaKH.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtMaKH_EditValueChanging);
-            this.txtMaKH.Enter += new System.EventHandler(this.txtMaKH_Enter);
+            
+            
             // 
             // txtMaNT
             // 

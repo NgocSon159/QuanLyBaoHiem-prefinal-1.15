@@ -101,7 +101,10 @@ namespace QuanLyBaoHiem
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show("Có lỗi xảy ra", "Thông báo");
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
         }
 

@@ -25,52 +25,34 @@ namespace Model.Dao
                 
                 if (item.MaChuKy=="YEAR")
                 {
-                    DateTime Previous = item.NgayHieuLuc.Value.AddDays(-3);
-                    for (int i=1;i<=4;i++)
+                    DateTime Previous = item.NgayHieuLuc.Value;
+                    if ((date.Day == Previous.Day && date.Month == Previous.Month))
                     {
-                        if ((date.Day == Previous.Day && date.Month == Previous.Month))
-                        {
-                            hopDongs.Add(item);
-                        }
-                        Previous = Previous.AddDays(1);
+                        hopDongs.Add(item);
                     }
                 }
                 if(item.MaChuKy== "MONTH")
                 {
-                    DateTime Previous = item.NgayHieuLuc.Value.AddDays(-3);
-                    for (int i = 1; i <= 4; i++)
+                    DateTime Previous = item.NgayHieuLuc.Value;
+                    if ((date.Day == Previous.Day))
                     {
-                        if ((date.Day == Previous.Day))
-                        {
-                            hopDongs.Add(item);
-                        }
-                        Previous = Previous.AddDays(1);
+                        hopDongs.Add(item);
                     }
                 }
                 if(item.MaChuKy== "QUATER")
                 {
                     DateTime Previous = item.NgayHieuLuc.Value.AddMonths(3);
-                    Previous = Previous.AddDays(-3);
-                    for (int i = 1; i <= 4; i++)
+                    if ((date.Day == Previous.Day && date.Month == Previous.Month))
                     {
-                        if ((date.Day == Previous.Day&&date.Month == Previous.Month))
-                        {
-                            hopDongs.Add(item);
-                        }
-                        Previous = Previous.AddDays(1);
+                        hopDongs.Add(item);
                     }
                 }
                 if(item.MaChuKy== "HALF")
                 {
                     DateTime Previous = item.NgayHieuLuc.Value.AddMonths(6);
-                    Previous = Previous.AddDays(-3);
-                    for (int i = 1; i <= 4; i++)
+                    if ((date.Day == Previous.Day && date.Month == Previous.Month))
                     {
-                        if ((date.Day == Previous.Day && date.Month == Previous.Month))
-                        {
-                            hopDongs.Add(item);
-                        }
-                        Previous = Previous.AddDays(1);
+                        hopDongs.Add(item);
                     }
                 }
             }

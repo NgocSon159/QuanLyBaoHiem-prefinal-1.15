@@ -159,32 +159,7 @@ namespace QuanLyBaoHiem
             f.Show();
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if(txtMaKH.Text==""||txtCMND.Text==""||txtDiaChi.Text==""||cboGioiTinh.Text==""||dtmNgaySinh.Text==""||txtSdt.Text==""||cboTenCD.Text==""||txtTenKH.Text=="")
-                {
-                    MessageBox.Show("Mời Nhập Đủ Thông Tin");
-                }
-                else
-                {
-                    string MaCD;
-                    KhachHangDao kh = new KhachHangDao();
-                    CapDoDao cd = new CapDoDao();
-                    MaCD = cd.MaCD(cboTenCD.Text);
-                    kh.suakhachhang(txtMaKH.Text, txtTenKH.Text, MaCD, dtmNgaySinh.DateTime, cboGioiTinh.Text, txtDiaChi.Text, txtSdt.Text, txtCMND.Text, ima);
-                    MessageBox.Show("Sửa Thành Công");
-                    this.refresh();
-                }
-                
-                
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Chọn Khách Hàng Cần Sửa");
-            }
-        }
+        
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
@@ -283,7 +258,7 @@ namespace QuanLyBaoHiem
             {
                 if (txtMaKH.Text == "" || txtCMND.Text == "" || txtDiaChi.Text == "" || cboGioiTinh.Text == "" || dtmNgaySinh.Text == "" || txtSdt.Text == "" || cboTenCD.Text == "" || txtTenKH.Text == "")
                 {
-                    MessageBox.Show("Mời Nhập Đủ Thông Tin");
+                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin");
                 }
                 else
                 {
@@ -292,7 +267,7 @@ namespace QuanLyBaoHiem
                     CapDoDao cd = new CapDoDao();
                     MaCD = cd.MaCD(cboTenCD.Text);
                     kh.suakhachhang(txtMaKH.Text, txtTenKH.Text, MaCD, dtmNgaySinh.DateTime, cboGioiTinh.Text, txtDiaChi.Text, txtSdt.Text, txtCMND.Text, ima);
-                    MessageBox.Show("Sửa Thành Công");
+                    XtraMessageBox.Show("Sửa Thành Công");
                     this.refresh();
                 }
 
@@ -300,7 +275,10 @@ namespace QuanLyBaoHiem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Chọn Khách Hàng Cần Sửa");
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
         }
 

@@ -11,6 +11,8 @@ using DevExpress.XtraEditors;
 using QuanLyBaoHiem.MinhTam;
 using Model.Dao;
 using QuanLyBaoHiem.Models;
+using DevExpress.Utils;
+
 namespace QuanLyBaoHiem
 {
     public partial class ucThongBaoDongHoaDon : DevExpress.XtraEditors.XtraUserControl
@@ -32,8 +34,9 @@ namespace QuanLyBaoHiem
             notify = new NotifyIcon();
             LoadMatrix();
             DateTime dt = DateTime.Now;
+            DateTime dateTime = dt.AddDays(1);
             HopDongDao hd = new HopDongDao();
-            List<HopDong> result = hd.LoadThongBaoHopDong(dt);
+            List<HopDong> result = hd.LoadThongBaoHopDong(dateTime);
             if (result == null) return;
             List<ThongBaoHopDong> today = new List<ThongBaoHopDong>();
             foreach (var item in result)
@@ -42,7 +45,8 @@ namespace QuanLyBaoHiem
                 today.Add(thongBaoHopDong);
             }
 
-            notifyIcon.ShowBalloonTip(10000, "Lịch Công Việc", string.Format("Bạn có {0} thông báo hợp đồng trong ngày hôm nay", today.Count), ToolTipIcon.Info);
+            notifyIcon.ShowBalloonTip(10000, "Lịch Công Việc", string.Format("Bạn có {0} thông báo hợp đồng vào ngày mai", today.Count), ToolTipIcon.Info);
+            XtraMessageBox.Show("Bạn có " + today.Count + " thông báo đóng hợp đồng vào ngày mai", "Thông báo");
             //timerNotify.Start();
         }
         public void LoadMatrix()
@@ -57,8 +61,13 @@ namespace QuanLyBaoHiem
                 {
                     SimpleButton bt = new SimpleButton() { Width=75,Height=44,};
                     bt.Location = new Point(oldbtn.Location.X + oldbtn.Width+19,oldbtn.Location.Y);
+                    bt.StyleController = null;
+                    bt.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+                    bt.Appearance.BackColor = Color.Transparent;
+                    bt.LookAndFeel.UseDefaultLookAndFeel = false;
                     bt.LookAndFeel.SetSkinStyle("", "");
                     bt.LookAndFeel.SkinMaskColor2 = Color.YellowGreen;
+                    bt.ShowFocusRectangle = DefaultBoolean.True;
                     bt.Click += bt_Click;
                     panel1.Controls.Add(bt);
                     Matrix[i].Add(bt);
@@ -77,8 +86,12 @@ namespace QuanLyBaoHiem
             {
                 DateTime dt = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, Convert.ToInt32((sender as SimpleButton).Text));
                 dateTimePicker1.Value = dt;
-                ThongBaoHopDongForm tb = new ThongBaoHopDongForm(dateTimePicker1.Value);
-                tb.ShowDialog();
+                HopDongDao hd = new HopDongDao();
+                if (hd.LoadThongBaoHopDong(dateTimePicker1.Value).Count > 0 && hd.LoadThongBaoHopDong(dateTimePicker1.Value) != null)
+                {
+                    ThongBaoHopDongForm tb = new ThongBaoHopDongForm(dateTimePicker1.Value);
+                    tb.ShowDialog();
+                }
             }
         }
 
@@ -93,8 +106,10 @@ namespace QuanLyBaoHiem
                 for(int j=0;j<Matrix[i].Count;j++)
                 {
                     SimpleButton btn = Matrix[i][j];
+                    btn.Visible = true;
                     btn.Text = "";
                     btn.LookAndFeel.SkinMaskColor = Color.WhiteSmoke;
+                    btn.Appearance.BackColor = Color.White;
                 }
             }
         }
@@ -122,23 +137,48 @@ namespace QuanLyBaoHiem
             ClearMatrix();
             DateTime useDate = new DateTime(date.Year, date.Month, 1);
             int line = 0;
-            for(int i=1;i<=DayOfMonth(date);i++)
+            HopDongDao hd = new HopDongDao();
+
+            for (int i = 0; i < Matrix.Count; i++)
+            {
+                for (int j = 0; j < Matrix[i].Count; j++)
+                {
+                    SimpleButton btn = Matrix[i][j];
+                    btn.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+                    btn.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+                    btn.LookAndFeel.UseDefaultLookAndFeel = false;
+                    btn.AllowFocus = false;
+                }
+            }
+
+            for (int i=1;i<=DayOfMonth(date);i++)
             {
                 int column = dateofWeek.IndexOf(useDate.DayOfWeek.ToString());
                 SimpleButton btn = Matrix[line][column];
                 btn.Text = i.ToString();
-                if (isEqualDate(useDate, dateTimePicker1.Value))
-                {
-                    btn.LookAndFeel.SkinMaskColor = Color.Goldenrod; 
-                }
                 if (isEqualDate(useDate,DateTime.Now))
-                {    
-                    btn.LookAndFeel.SkinMaskColor = Color.GreenYellow;
+                {
+                    btn.Appearance.BackColor = Color.GreenYellow;
                     //btn.BackColor = Color.Yellow;
+                }
+                if(hd.LoadThongBaoHopDong(useDate).Count>0&&hd.LoadThongBaoHopDong(useDate)!=null)
+                {
+                    btn.Appearance.BackColor = Color.LightPink;
                 }
                 if (column >= 6)
                     line++;
                 useDate = useDate.AddDays(1);
+            }
+            for (int i = 0; i < Matrix.Count; i++)
+            {
+                for (int j = 0; j < Matrix[i].Count; j++)
+                {
+                    SimpleButton btn = Matrix[i][j];
+                    if (btn.Text == "")
+                    {
+                        btn.Visible = false;
+                    }
+                }
             }
         }
         bool isEqualDate(DateTime a,DateTime b)

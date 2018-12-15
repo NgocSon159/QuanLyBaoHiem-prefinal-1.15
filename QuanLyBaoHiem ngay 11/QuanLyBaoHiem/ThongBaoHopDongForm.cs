@@ -19,7 +19,6 @@ namespace QuanLyBaoHiem
         {
             InitializeComponent();
             FlowLayoutPanel f = new FlowLayoutPanel();
-            dateTimePicker1.Value = dateTime;
             f.Width = panel1.Width;
             f.Height = panel1.Height;
             panel1.Controls.Add(f);

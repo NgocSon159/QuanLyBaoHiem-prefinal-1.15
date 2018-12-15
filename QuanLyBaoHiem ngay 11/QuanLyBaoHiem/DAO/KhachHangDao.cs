@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DevExpress.XtraEditors;
 using QuanLyBaoHiem.Models;
 namespace Model.Dao
 {
@@ -73,7 +74,7 @@ namespace Model.Dao
             var kh = db.KhachHangs.FirstOrDefault(x => x.MaKH == MaKH);
             kh.MaCD = MaCD;
             kh.TenKH = TenKH;
-            
+
 
             kh.NgaySinh = NgaySinh;
             if (GioiTinh == "Nam")
@@ -90,6 +91,7 @@ namespace Model.Dao
             kh.HinhAnh = hinhanh;
             db.SaveChanges();
         }
+
         public List<KhachHang> LoadNgaySinh(DateTime dt)
         {
             var result = db.KhachHangs.Where(x => x.NgaySinh.Value.Day == dt.Day).Where(x => x.NgaySinh.Value.Month == dt.Month).Where(x=>x.Status==true).ToList();

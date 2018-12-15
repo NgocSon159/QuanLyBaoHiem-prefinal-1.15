@@ -116,6 +116,7 @@
             // 
             // cboMaCV
             // 
+            this.cboMaCV.Enabled = false;
             this.cboMaCV.Location = new System.Drawing.Point(177, 46);
             this.cboMaCV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaCV.Name = "cboMaCV";

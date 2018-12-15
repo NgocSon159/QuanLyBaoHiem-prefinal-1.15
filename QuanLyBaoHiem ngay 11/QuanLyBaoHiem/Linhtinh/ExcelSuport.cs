@@ -16,7 +16,7 @@ namespace QuanLyBaoHiem.Linhtinh
             var dbs = db.Database.SqlQuery<string>("select c.name from sys.columns c inner join sys.tables t on t.object_id = c.object_id and t.name = '" + tenbang + "' and t.type = 'U'");
             foreach (var item in dbs)
             {
-                if(item== "HinhAnh"||item== "MatKhau"||item=="Status")
+                if(item== "HinhAnh"||item== "MatKhau"||item=="Status" || item == "MaKH" || item == "MaNV" || item == "MaHD")
                 {
                     continue;
                 }
