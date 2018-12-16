@@ -101,22 +101,28 @@ namespace QuanLyBaoHiem
             txtTenNV.Text = gridView1.GetFocusedRowCellValue(colTenNV).ToString();
             txtTenCV.Text = gridView1.GetFocusedRowCellValue(colTenCV).ToString();
             cboMaNVQL.SelectedIndex = 0;
-
+            cboMaNVQL.Enabled = true;
             btnHuy.Visible = true;
             btnLuu.Visible = true;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            if(dsnhanviencanchuyenTP.Count!=0)
-            {
-                DialogResult dialogResult = XtraMessageBox.Show("Xác nhận", "Nhân viên chưa được chuyển hết! Bạn có chắc chắn muốn thoát?", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    this.Close();
-                }
-            }
-            
+            resettextbox();
+
+
+        }
+
+        public void resettextbox()
+        {
+            txtMaNV.Text = "";
+            txtTenCV.Text = "";
+            txtTenNV.Text = "";
+            cboMaNVQL.Enabled = false;
+            cboMaNVQL.Text = "";
+
+            btnHuy.Visible = false;
+            btnLuu.Visible = false;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -126,9 +132,10 @@ namespace QuanLyBaoHiem
             nvdao.suaMaNVQLCustom(txtMaNV.Text, cboMaNVQL.Text);
             XtraMessageBox.Show("Thay đổi thành công");
             refreshgridview();
-            
+            f.loaddatabse();
             loaddanhsach(manvqlhientai);
-            if(dsnhanviencanchuyenTP.Count==0)
+            resettextbox();
+            if (dsnhanviencanchuyenTP.Count==0)
             {
                 DialogResult dialogResult = XtraMessageBox.Show("Bạn đã có thể chuyển chức vụ cho nhân viên " + manvqlhientai,"Thông báo", MessageBoxButtons.OK);
                 if (dialogResult == DialogResult.OK)
@@ -138,6 +145,37 @@ namespace QuanLyBaoHiem
                     this.Close();
                 }
             }
+        }
+        int flag = 0;
+        private void FormSetNVQLcon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(flag==0)
+            {
+                if (dsnhanviencanchuyenTP.Count != 0)
+                {
+                    DialogResult dialogResult = XtraMessageBox.Show("Nhân viên chưa được chuyển hết! Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        flag++;
+                        f.focuslairow();
+                        this.Close();
+                        
+                        
+                    }
+                    else
+                    {
+                        e.Cancel = true;
+                    }
+
+                }
+            }
+            else
+            {
+                f.focuslairow();
+                this.Close();
+                
+            }
+            
         }
     }
 }

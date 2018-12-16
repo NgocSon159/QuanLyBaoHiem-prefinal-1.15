@@ -18,6 +18,7 @@ namespace QuanLyBaoHiem
 {
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
+        String dirPath = @"C:\temp";
         public frmLogin()
         {
             InitializeComponent();
@@ -30,14 +31,27 @@ namespace QuanLyBaoHiem
         {
             txtPass.Properties.PasswordChar = '*';
             loadtaikhoanmatkhaudanho();
+            taothumuctemp();
+        }
+
+        public void taothumuctemp()
+        {
+            bool exist = Directory.Exists(dirPath);
+            if (!exist)
+            {
+               
+
+                // Tạo thư mục.
+                Directory.CreateDirectory(dirPath);
+            }
         }
 
         public void loadtaikhoanmatkhaudanho()
         {
-            string path = "C:\\remember.ini";
+            string path = "C:\\temp\\remember.ini";
             if(File.Exists(path)==true)
             {
-                string[] lines = File.ReadAllLines(@"C:\remember.ini");
+                string[] lines = File.ReadAllLines(@"C:\temp\remember.ini");
                 int sl = lines.Count();
                 if(sl!=0)
                 txtUser.Text = lines[0];
@@ -47,7 +61,7 @@ namespace QuanLyBaoHiem
 
         public void ghinhotaikhoanvapass()
         {
-            String filepath = "C:\\remember.ini";
+            String filepath = "C:\\temp\\remember.ini";
             if (checkEdit1.Checked==true)
             {
                 if (File.Exists(filepath) == true)

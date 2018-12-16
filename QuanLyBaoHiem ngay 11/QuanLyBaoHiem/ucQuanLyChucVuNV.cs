@@ -90,7 +90,7 @@ namespace QuanLyBaoHiem
             }
             
             cboTenCV.Enabled = true;
-
+            btnChuyenNVcuaTruongPhong.Visible = false;
 
             btnHuy.Visible = true;
             btnLuu.Visible = true;
@@ -209,6 +209,13 @@ namespace QuanLyBaoHiem
             }
             cboMaNVQL.SelectedIndex = 0;
         }
+
+        public void focuslairow()
+        {
+            int row = gridView2.LocateByValue("MaNV", txtMaNV.Text, null);
+            gridView2.FocusedRowHandle = row;
+        }
+
 
         private void cboTenCV_SelectedIndexChanged(object sender, EventArgs e)
         {

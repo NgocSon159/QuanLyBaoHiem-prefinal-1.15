@@ -69,7 +69,7 @@ namespace QuanLyBaoHiem
             btnQuanLyCapDoKH.Links[0].Visible = false;
             btnThongTinNhanVien.Links[0].Visible = false;
             ribbonThongke.Visible = false;
-            ribbonSaoluu.Visible = false;
+            ribbonPhuchoi.Visible = false;
         }
         public void phanquyenNhanVien()
         {
@@ -85,8 +85,20 @@ namespace QuanLyBaoHiem
 
             ribbonPage2.Visible = false;    //tab Nhân viên
             ribbonThongke.Visible = false;
-            ribbonSaoluu.Visible = false;
+            ribbonPhuchoi.Visible = false;
             ribbonPageGroup2.Visible = false;
+            if(taikhoanhientai=="NV0011")
+            {
+                btnInfor.Links[0].Visible = false;
+                ribbonPage2.Visible = false;
+                ribbonPage4.Visible = false;
+                ribbonPage6.Visible = false;
+                ribbonPage8.Visible = false;
+                ribbonThongke.Visible = false;
+                ribbonPage7.Visible = false;
+                ribbonPhuchoi.Visible = true;
+
+            }
         }
         private void frmMain_Load(object sender, EventArgs e)
         {

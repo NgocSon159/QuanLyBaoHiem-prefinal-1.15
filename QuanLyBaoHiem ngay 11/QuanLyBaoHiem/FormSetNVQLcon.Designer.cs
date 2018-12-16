@@ -30,6 +30,10 @@
         {
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMaNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenNV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenCV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMaNVQL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaNV = new DevExpress.XtraEditors.TextEdit();
             this.label3 = new DevExpress.XtraEditors.LabelControl();
@@ -38,10 +42,6 @@
             this.label2 = new DevExpress.XtraEditors.LabelControl();
             this.cboMaNVQL = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtTenCV = new DevExpress.XtraEditors.TextEdit();
-            this.colMaNV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTenNV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTenCV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMaNVQL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -77,6 +77,38 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colMaNV
+            // 
+            this.colMaNV.Caption = "Mã nhân viên";
+            this.colMaNV.FieldName = "MaNV";
+            this.colMaNV.Name = "colMaNV";
+            this.colMaNV.Visible = true;
+            this.colMaNV.VisibleIndex = 0;
+            // 
+            // colTenNV
+            // 
+            this.colTenNV.Caption = "Tên nhân viên";
+            this.colTenNV.FieldName = "TenNV";
+            this.colTenNV.Name = "colTenNV";
+            this.colTenNV.Visible = true;
+            this.colTenNV.VisibleIndex = 1;
+            // 
+            // colTenCV
+            // 
+            this.colTenCV.Caption = "Tên chức vụ";
+            this.colTenCV.FieldName = "TenCV";
+            this.colTenCV.Name = "colTenCV";
+            this.colTenCV.Visible = true;
+            this.colTenCV.VisibleIndex = 2;
+            // 
+            // colMaNVQL
+            // 
+            this.colMaNVQL.Caption = "Mã nhân viên quản lý";
+            this.colMaNVQL.FieldName = "MaNVQuanLi";
+            this.colMaNVQL.Name = "colMaNVQL";
+            this.colMaNVQL.Visible = true;
+            this.colMaNVQL.VisibleIndex = 3;
             // 
             // labelControl2
             // 
@@ -140,6 +172,7 @@
             // 
             // cboMaNVQL
             // 
+            this.cboMaNVQL.Enabled = false;
             this.cboMaNVQL.Location = new System.Drawing.Point(693, 78);
             this.cboMaNVQL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaNVQL.Name = "cboMaNVQL";
@@ -161,38 +194,6 @@
             this.txtTenCV.Properties.Appearance.Options.UseBackColor = true;
             this.txtTenCV.Size = new System.Drawing.Size(245, 22);
             this.txtTenCV.TabIndex = 56;
-            // 
-            // colMaNV
-            // 
-            this.colMaNV.Caption = "Mã nhân viên";
-            this.colMaNV.FieldName = "MaNV";
-            this.colMaNV.Name = "colMaNV";
-            this.colMaNV.Visible = true;
-            this.colMaNV.VisibleIndex = 0;
-            // 
-            // colTenNV
-            // 
-            this.colTenNV.Caption = "Tên nhân viên";
-            this.colTenNV.FieldName = "TenNV";
-            this.colTenNV.Name = "colTenNV";
-            this.colTenNV.Visible = true;
-            this.colTenNV.VisibleIndex = 1;
-            // 
-            // colTenCV
-            // 
-            this.colTenCV.Caption = "Tên chức vụ";
-            this.colTenCV.FieldName = "TenCV";
-            this.colTenCV.Name = "colTenCV";
-            this.colTenCV.Visible = true;
-            this.colTenCV.VisibleIndex = 2;
-            // 
-            // colMaNVQL
-            // 
-            this.colMaNVQL.Caption = "Mã nhân viên quản lý";
-            this.colMaNVQL.FieldName = "MaNVQuanLi";
-            this.colMaNVQL.Name = "colMaNVQL";
-            this.colMaNVQL.Visible = true;
-            this.colMaNVQL.VisibleIndex = 3;
             // 
             // btnHuy
             // 
@@ -243,6 +244,7 @@
             this.Name = "FormSetNVQLcon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý chức vụ ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSetNVQLcon_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaNV.Properties)).EndInit();

@@ -72,7 +72,7 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonSaoluu = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPhuchoi = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbSStatus = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -182,7 +182,7 @@
             this.ribbonPage8,
             this.ribbonThongke,
             this.ribbonPage7,
-            this.ribbonSaoluu});
+            this.ribbonPhuchoi});
             this.ribbonControl1.Size = new System.Drawing.Size(1056, 178);
             this.ribbonControl1.StatusBar = this.rbSStatus;
             // 
@@ -565,19 +565,18 @@
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "Nhập dữ liệu";
             // 
-            // ribbonSaoluu
+            // ribbonPhuchoi
             // 
-            this.ribbonSaoluu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPhuchoi.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup6});
-            this.ribbonSaoluu.Name = "ribbonSaoluu";
-            this.ribbonSaoluu.Text = "Sao lưu";
+            this.ribbonPhuchoi.Name = "ribbonPhuchoi";
+            this.ribbonPhuchoi.Text = "Phục hồi";
             // 
             // ribbonPageGroup6
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnSaoLuu);
             this.ribbonPageGroup6.ItemLinks.Add(this.btnPhucHoi);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "Sao lưu và phục hồi";
+            this.ribbonPageGroup6.Text = "Phục hồi";
             // 
             // rbSStatus
             // 
@@ -1187,7 +1186,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem btnQuanlyCapdo;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonSaoluu;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPhuchoi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem btnSaoLuu;
         private DevExpress.XtraBars.BarButtonItem btnPhucHoi;
