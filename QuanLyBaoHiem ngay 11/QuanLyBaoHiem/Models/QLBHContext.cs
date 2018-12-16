@@ -8,7 +8,7 @@ namespace QuanLyBaoHiem.Models
     public partial class QLBHContext : DbContext
     {
         public QLBHContext()
-            : base("name=QLBHContext")
+            : base("name=QLBHContextIP")
         {
         }
 

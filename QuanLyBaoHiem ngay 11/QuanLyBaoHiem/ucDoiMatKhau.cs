@@ -62,6 +62,7 @@ namespace QuanLyBaoHiem
                     }
                     else
                     {
+                        
                         if(txtNewPass.Text!=txtReNewPass.Text)
                         {
                             XtraMessageBox.Show("2 mật khẩu mới không khớp");
@@ -80,10 +81,18 @@ namespace QuanLyBaoHiem
                                 }
                                 else
                                 {
-                                    dndao.doimatkhau(taikhoanhientai, matkhaudangnhap, txtNewPass.Text);
+                                    if (txtNewPass.Text.Length < 6 || txtNewPass.Text.Length < 6)
+                                    {
+                                        XtraMessageBox.Show("Mật khẩu không được dưới 6 ký tự!!!");
+                                    }
+                                    else
+                                    {
+                                        dndao.doimatkhau(taikhoanhientai, matkhaudangnhap, txtNewPass.Text);
 
-                                    f.tattab();
-                                    f.matkhauhientai = MahoaMD5.getMd5Hash(txtNewPass.Text);
+                                        f.tattab();
+                                        f.matkhauhientai = MahoaMD5.getMd5Hash(txtNewPass.Text);
+                                    }
+                                    
                                 }
                                 
                             }

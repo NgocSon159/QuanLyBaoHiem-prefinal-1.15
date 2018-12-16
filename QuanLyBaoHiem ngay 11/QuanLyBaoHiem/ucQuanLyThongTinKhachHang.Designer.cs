@@ -298,7 +298,7 @@
             this.btnExport.Location = new System.Drawing.Point(23, 181);
             this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(128, 40);
+            this.btnExport.Size = new System.Drawing.Size(128, 39);
             this.btnExport.TabIndex = 10;
             this.btnExport.Text = "Export";
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
@@ -311,7 +311,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(23, 85);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(128, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(128, 39);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Refresh";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -324,7 +324,7 @@
             this.btnXoa.Location = new System.Drawing.Point(23, 133);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(128, 40);
+            this.btnXoa.Size = new System.Drawing.Size(128, 39);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.simpleButton3_Click);
@@ -337,7 +337,7 @@
             this.btnThemKH.Location = new System.Drawing.Point(23, 37);
             this.btnThemKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(128, 40);
+            this.btnThemKH.Size = new System.Drawing.Size(128, 39);
             this.btnThemKH.TabIndex = 0;
             this.btnThemKH.Text = "Thêm";
             this.btnThemKH.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -392,7 +392,7 @@
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Appearance.Options.UseFont = true;
             this.btnLuu.ImageOptions.Image = global::QuanLyBaoHiem.Properties.Resources.apply;
-            this.btnLuu.Location = new System.Drawing.Point(592, 194);
+            this.btnLuu.Location = new System.Drawing.Point(591, 194);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(93, 32);
@@ -438,13 +438,13 @@
             // btnDuyetAnh
             // 
             this.btnDuyetAnh.Enabled = false;
-            this.btnDuyetAnh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.btnDuyetAnh.Location = new System.Drawing.Point(33, 182);
+            this.btnDuyetAnh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuyetAnh.ImageOptions.Image")));
+            this.btnDuyetAnh.Location = new System.Drawing.Point(27, 182);
             this.btnDuyetAnh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDuyetAnh.Name = "btnDuyetAnh";
-            this.btnDuyetAnh.Size = new System.Drawing.Size(146, 34);
+            this.btnDuyetAnh.Size = new System.Drawing.Size(158, 34);
             this.btnDuyetAnh.TabIndex = 37;
-            this.btnDuyetAnh.Text = "Duyện hình ảnh";
+            this.btnDuyetAnh.Text = "Cập nhật hình ảnh";
             this.btnDuyetAnh.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // imagebox
@@ -601,7 +601,7 @@
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(39, 296);
+            this.labelControl17.Location = new System.Drawing.Point(38, 295);
             this.labelControl17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(60, 18);
@@ -622,8 +622,9 @@
             // simpleButton1
             // 
             this.simpleButton1.Location = new System.Drawing.Point(420, 293);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(73, 19);
+            this.simpleButton1.Size = new System.Drawing.Size(73, 18);
             this.simpleButton1.TabIndex = 33;
             this.simpleButton1.Text = "Xóa";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);

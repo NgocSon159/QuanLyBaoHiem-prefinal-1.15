@@ -15,6 +15,7 @@ namespace QuanLyBaoHiem
 {
     public partial class ucNguoiThanKhachHang : DevExpress.XtraEditors.XtraUserControl
     {
+        
         public ucNguoiThanKhachHang()
         {
             InitializeComponent();
@@ -56,9 +57,9 @@ namespace QuanLyBaoHiem
             {
                 txtMaKH.Text = "";
             }
-            txtTenNTKH.Text= gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "TenNT").ToString();
+            txtTenKH.Text= gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "TenNT").ToString();
             txtCMND.Text= gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "CMND").ToString();
-            txtTenKH.Text = result.TenKH;
+            txtTenKHNT.Text = result.TenKH;
             if(gridView1.GetFocusedRowCellValue(colSDT)!=null)
             {
                 txtSDT.Text = gridView1.GetFocusedRowCellValue(colSDT).ToString();
@@ -76,6 +77,7 @@ namespace QuanLyBaoHiem
 
             btnHuy.Visible = true;
             btnLuu.Visible = true;
+            
         }
 
         public void enabletextbox()
@@ -85,9 +87,9 @@ namespace QuanLyBaoHiem
             txtMaKHNT.Enabled = true;
             txtMaKH.Enabled = true;
 
-            txtTenNTKH.Enabled = true;
-            txtCMND.Enabled = true;
             txtTenKH.Enabled = true;
+            txtCMND.Enabled = true;
+            txtTenKHNT.Enabled = true;
 
             txtNgaySinh.Enabled = true;
             cboGioitinh.Enabled = true;
@@ -101,9 +103,9 @@ namespace QuanLyBaoHiem
             txtMaKHNT.Enabled = false ;
             txtMaKH.Enabled = false ;
 
-            txtTenNTKH.Enabled = false ;
-            txtCMND.Enabled = false ;
             txtTenKH.Enabled = false ;
+            txtCMND.Enabled = false ;
+            txtTenKHNT.Enabled = false ;
 
             txtNgaySinh.Enabled = false ;
             cboGioitinh.Enabled = false ;
@@ -125,7 +127,7 @@ namespace QuanLyBaoHiem
         {
             try
             {
-                if (txtMaNT.Text == "" || txtMaKHNT.Text == "" || cboGioitinh.Text=="" || txtDiaChi.Text == "" || txtCMND.Text == "" || txtNgaySinh.Text == "" || txtTenKH.Text == "" || txtTenNTKH.Text == "")
+                if (txtMaNT.Text == "" || txtMaKHNT.Text == "" || cboGioitinh.Text=="" || txtDiaChi.Text == "" || txtCMND.Text == "" || txtNgaySinh.Text == "" || txtTenKHNT.Text == "" || txtTenKH.Text == "")
                 {
                     MessageBox.Show("Chọn Thông Tin Cần Sửa");
                 }
@@ -133,11 +135,35 @@ namespace QuanLyBaoHiem
                 {
                     var s = "";
                     s = cboGioitinh.Text;
-                    
                     NguoiThanDao ng = new NguoiThanDao();
-                    ng.suakhachhang(txtMaNT.Text, txtMaKHNT.Text, txtTenNTKH.Text, txtNgaySinh.DateTime, s, txtDiaChi.Text, txtCMND.Text, txtMaKH.Text,txtSDT.Text);
-                    MessageBox.Show("Sửa Thành Công");
-                    this.refresh();
+                    if(txtMaKH.Text!=" ")
+                    {
+                        KhachHangDao kh = new KhachHangDao();
+                        var model=kh.getKH(txtMaKH.Text);
+                        Boolean gioitinh;
+                        if (cboGioitinh.Text == "Nam")
+                        {
+                            gioitinh = true;
+                        }
+                        else gioitinh = false;
+                        if(model.TenKH!=txtTenKH.Text||model.CMND!=txtCMND.Text||model.DiaChi!=txtDiaChi.Text||model.GioiTinh!=gioitinh||model.NgaySinh!=txtNgaySinh.DateTime||model.Sdt!=txtSDT.Text)
+                        {
+                            XtraMessageBox.Show("Thông tin người thân tồn tại khác với khách hàng đã có","Thông Báo");
+                        }
+                        else
+                        {
+                            ng.suakhachhang(txtMaNT.Text, txtMaKHNT.Text, txtTenKH.Text, txtNgaySinh.DateTime, s, txtDiaChi.Text, txtCMND.Text, txtMaKH.Text, txtSDT.Text);
+                            XtraMessageBox.Show("Sửa Thành Công","Thông Báo");
+                            this.refresh();
+                        }
+                    }
+                    else
+                    {
+                        ng.suakhachhang(txtMaNT.Text, txtMaKHNT.Text, txtTenKH.Text, txtNgaySinh.DateTime, s, txtDiaChi.Text, txtCMND.Text, txtMaKH.Text, txtSDT.Text);
+                        MessageBox.Show("Sửa Thành Công");
+                        this.refresh();
+                    }
+                    
                 }
                 //KhachHangDao kh = new KhachHangDao();
                 //SuaKH f = new SuaKH(txtMaNT.Text, txtMaKH.Text, kh.GetCapDo(txtMaNT.Text), txtNgaySinh.Text, txtGioiTinh.Text, txtCMND.Text, txtDiaChi.Text, txtSdt.Text);
@@ -155,7 +181,7 @@ namespace QuanLyBaoHiem
         {
             if (txtMaNT.Text == "")
             {
-                XtraMessageBox.Show("Bạn chưa chọn dòng!!");
+                XtraMessageBox.Show("Bạn chưa chọn dòng!!","Thông Báo");
             }
             else
             {
@@ -164,7 +190,7 @@ namespace QuanLyBaoHiem
                 {
                     NguoiThanDao ng = new NguoiThanDao();
                     ng.xoanguothan(txtMaNT.Text);
-                    XtraMessageBox.Show("Đã xóa thành công!!");
+                    XtraMessageBox.Show("Đã xóa thành công!!","Thông Báo");
                     this.refresh();
 
                     resettext();
@@ -176,7 +202,7 @@ namespace QuanLyBaoHiem
         }
         internal void popup(string txt)
         {
-            txtTenKH.Text = txt;
+            txtTenKHNT.Text = txt;
         }
         
 
@@ -188,8 +214,25 @@ namespace QuanLyBaoHiem
                 var result = kh.getKH(txtMaKHNT.Text);
                 if (result == null)
                 {
-                    MessageBox.Show("Mã Khách Hàng Không Tồn Tại");
-                    txtMaKHNT.Text = "";
+                    XtraMessageBox.Show("Mã Khách Hàng Không Tồn Tại","Thông Báo");
+                    NguoiThanDao ng = new NguoiThanDao();
+                    var model = ng.getNT(txtMaNT.Text);
+                    txtMaKHNT.Text = model.MaKH;
+                    txtTenKHNT.Text = kh.TenKH(model.MaKH);
+                    txtMaKH.Text = model.MaKHRieng;
+                    txtTenKH.Text = model.TenNT;
+                    txtCMND.Text = model.CMND;
+                    if(model.GioiTinh==true)
+                    {
+                        cboGioitinh.Text = "Nam";
+                    }
+                    else
+                    {
+                        cboGioitinh.Text = "Nữ";
+                    }
+                    txtDiaChi.Text = model.DiaChi;
+                    txtSDT.Text = model.SDT;
+                    txtNgaySinh.DateTime = Convert.ToDateTime(model.NgaySinh);
                 }
                 else
                 {
@@ -206,12 +249,29 @@ namespace QuanLyBaoHiem
                 var result = kh.getKH(txtMaKH.Text);
                 if (result == null)
                 {
-                    MessageBox.Show("Mã Khách Hàng Không Tồn Tại");
-                    txtMaKH.Text = "";
+                    XtraMessageBox.Show("Mã Khách Hàng Không Tồn Tại","Thông Báo");
+                    NguoiThanDao ng = new NguoiThanDao();
+                    var model = ng.getNT(txtMaNT.Text);
+                    txtMaKHNT.Text = model.MaKH;
+                    txtTenKHNT.Text = kh.TenKH(model.MaKH);
+                    txtMaKH.Text = model.MaKHRieng;
+                    txtTenKH.Text = model.TenNT;
+                    txtCMND.Text = model.CMND;
+                    if (model.GioiTinh == true)
+                    {
+                        cboGioitinh.Text = "Nam";
+                    }
+                    else
+                    {
+                        cboGioitinh.Text = "Nữ";
+                    }
+                    txtDiaChi.Text = model.DiaChi;
+                    txtSDT.Text = model.SDT;
+                    txtNgaySinh.DateTime = Convert.ToDateTime(model.NgaySinh);
                 }
                 else
                 {
-                    txtTenNTKH.Text = result.TenKH;
+                    txtTenKH.Text = result.TenKH;
                     txtCMND.Text = result.CMND;
                     txtDiaChi.Text = result.DiaChi;
                     if (result.GioiTinh == true)
@@ -242,19 +302,67 @@ namespace QuanLyBaoHiem
         {
             try
             {
-                if (txtSDT.Text==""||txtMaNT.Text == "" || txtMaKHNT.Text == "" || cboGioitinh.Text == "" || txtDiaChi.Text == "" || txtCMND.Text == "" || txtNgaySinh.Text == "" || txtTenKH.Text == "" || txtTenNTKH.Text == "")
+                if (txtSDT.Text==""||txtMaNT.Text == "" || txtMaKHNT.Text == "" || cboGioitinh.Text == "" || txtDiaChi.Text == "" || txtCMND.Text == "" || txtNgaySinh.Text == "" || txtTenKHNT.Text == "" || txtTenKH.Text == "")
                 {
-                    MessageBox.Show("Chọn Thông Tin Cần Sửa");
+                    XtraMessageBox.Show("Chọn Thông Tin Cần Sửa","Thông Báo");
                 }
                 else
                 {
                     var s = "";
                     s = cboGioitinh.Text;
-
                     NguoiThanDao ng = new NguoiThanDao();
-                    ng.suakhachhang(txtMaNT.Text, txtMaKHNT.Text, txtTenNTKH.Text, txtNgaySinh.DateTime, s, txtDiaChi.Text, txtCMND.Text, txtMaKH.Text,txtSDT.Text);
-                    MessageBox.Show("Sửa Thành Công");
-                    this.refresh();
+                    if (txtMaKH.Text != "")
+                    {
+                        KhachHangDao kh = new KhachHangDao();
+                        var model = kh.getKH(txtMaKH.Text);
+                        Boolean gioitinh;
+                        if (cboGioitinh.Text == "Nam")
+                        {
+                            gioitinh = true;
+                        }
+                        else gioitinh = false;
+                        if (model != null)
+                        {
+                            DateTime dateTime = Convert.ToDateTime(model.NgaySinh);
+                            if (model.TenKH != txtTenKH.Text || model.CMND != txtCMND.Text || model.DiaChi != txtDiaChi.Text || model.GioiTinh != gioitinh || dateTime != txtNgaySinh.DateTime || model.Sdt != txtSDT.Text)
+                            {
+                                XtraMessageBox.Show("Thông tin người thân tồn tại khác với khách hàng đã có", "Thông Báo");
+                            }
+                            else
+                            {
+                                ng.suakhachhang(txtMaNT.Text, txtMaKHNT.Text, txtTenKH.Text, txtNgaySinh.DateTime, s, txtDiaChi.Text, txtCMND.Text, txtMaKH.Text, txtSDT.Text);
+                                XtraMessageBox.Show("Sửa Thành Công", "Thông Báo");
+                                this.refresh();
+                            }
+                        }
+                        else
+                        {
+                            XtraMessageBox.Show("Khách Hàng Không Tồn Tại","Thông Báo");
+                            var model2 = ng.getNT(txtMaNT.Text);
+                            txtMaKHNT.Text = model2.MaKH;
+                            txtTenKHNT.Text = kh.TenKH(model2.MaKH);
+                            txtMaKH.Text = model2.MaKHRieng;
+                            txtTenKH.Text = model2.TenNT;
+                            txtCMND.Text = model2.CMND;
+                            if (model2.GioiTinh == true)
+                            {
+                                cboGioitinh.Text = "Nam";
+                            }
+                            else
+                            {
+                                cboGioitinh.Text = "Nữ";
+                            }
+                            txtDiaChi.Text = model2.DiaChi;
+                            txtSDT.Text = model2.SDT;
+                            txtNgaySinh.DateTime = Convert.ToDateTime(model2.NgaySinh);
+                        }
+                    }
+                    else
+                    {
+                        ng.suakhachhang(txtMaNT.Text, txtMaKHNT.Text, txtTenKH.Text, txtNgaySinh.DateTime, s, txtDiaChi.Text, txtCMND.Text, txtMaKH.Text, txtSDT.Text);
+                        XtraMessageBox.Show("Sửa Thành Công","Thông Báo");
+                        this.refresh();
+                    }
                 }
                 //KhachHangDao kh = new KhachHangDao();
                 //SuaKH f = new SuaKH(txtMaNT.Text, txtMaKH.Text, kh.GetCapDo(txtMaNT.Text), txtNgaySinh.Text, txtGioiTinh.Text, txtCMND.Text, txtDiaChi.Text, txtSdt.Text);
@@ -262,10 +370,7 @@ namespace QuanLyBaoHiem
             }
             catch (Exception ex)
             {
-                string loi = ex.InnerException.ToString();
-                string[] loichia = loi.Split('\n');
-                string[] loichinh = loichia[0].Split(':');
-                XtraMessageBox.Show(loichinh[2]);
+                XtraMessageBox.Show("Chọn Khách Hàng Cần Sửa","Thông Báo");
             }
         }
 
@@ -279,9 +384,9 @@ namespace QuanLyBaoHiem
             txtMaKHNT.Text = "";
             txtMaKH.Text = "";
 
-            txtTenNTKH.Text = "";
-            txtCMND.Text = "";
             txtTenKH.Text = "";
+            txtCMND.Text = "";
+            txtTenKHNT.Text = "";
 
             txtNgaySinh.Text = "";
             cboGioitinh.Text = "";
@@ -298,9 +403,9 @@ namespace QuanLyBaoHiem
             txtMaKHNT.Text = "";
             txtMaKH.Text = "";
             
-            txtTenNTKH.Text = "";
-            txtCMND.Text = "";
             txtTenKH.Text = "";
+            txtCMND.Text = "";
+            txtTenKHNT.Text = "";
 
             txtNgaySinh.Text = "";
             cboGioitinh.Text = "";

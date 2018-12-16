@@ -18,6 +18,9 @@ namespace QuanLyBaoHiem.DAO
             var chucvu = db.ChucVus.Find(macv);
             return chucvu.TenCV;
         }
+
+        
+
         public List<NhanVien> Load()
         {
             return db.NhanViens.Where(x => x.Status == true).ToList();

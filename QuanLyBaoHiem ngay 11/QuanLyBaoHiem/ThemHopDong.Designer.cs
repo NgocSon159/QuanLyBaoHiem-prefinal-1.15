@@ -38,14 +38,14 @@
             this.txtMaHD = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtNgayHL = new DevExpress.XtraEditors.DateEdit();
+            this.dtmNgayHL = new DevExpress.XtraEditors.DateEdit();
             this.cboMaGHD = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cboMaCK = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cboMaKH = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtMaNV = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHD.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgayHL.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgayHL.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtmNgayHL.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtmNgayHL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaGHD.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaCK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaKH.Properties)).BeginInit();
@@ -64,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(129, 100);
+            this.label2.Location = new System.Drawing.Point(129, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 17);
             this.label2.TabIndex = 1;
@@ -73,7 +73,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(129, 146);
+            this.label3.Location = new System.Drawing.Point(129, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 2;
@@ -82,7 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(129, 191);
+            this.label4.Location = new System.Drawing.Point(129, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 17);
             this.label4.TabIndex = 3;
@@ -137,23 +137,23 @@
             this.simpleButton2.Text = "Thoát";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // txtNgayHL
+            // dtmNgayHL
             // 
-            this.txtNgayHL.EditValue = null;
-            this.txtNgayHL.Location = new System.Drawing.Point(277, 278);
-            this.txtNgayHL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtNgayHL.Name = "txtNgayHL";
-            this.txtNgayHL.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dtmNgayHL.EditValue = null;
+            this.dtmNgayHL.Location = new System.Drawing.Point(277, 278);
+            this.dtmNgayHL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtmNgayHL.Name = "dtmNgayHL";
+            this.dtmNgayHL.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtNgayHL.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dtmNgayHL.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtNgayHL.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtNgayHL.Size = new System.Drawing.Size(176, 22);
-            this.txtNgayHL.TabIndex = 14;
+            this.dtmNgayHL.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.dtmNgayHL.Size = new System.Drawing.Size(176, 22);
+            this.dtmNgayHL.TabIndex = 14;
             // 
             // cboMaGHD
             // 
-            this.cboMaGHD.Location = new System.Drawing.Point(277, 96);
+            this.cboMaGHD.Location = new System.Drawing.Point(277, 136);
             this.cboMaGHD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaGHD.Name = "cboMaGHD";
             this.cboMaGHD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -164,7 +164,7 @@
             // 
             // cboMaCK
             // 
-            this.cboMaCK.Location = new System.Drawing.Point(277, 143);
+            this.cboMaCK.Location = new System.Drawing.Point(277, 183);
             this.cboMaCK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaCK.Name = "cboMaCK";
             this.cboMaCK.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -187,7 +187,7 @@
             // txtMaNV
             // 
             this.txtMaNV.Enabled = false;
-            this.txtMaNV.Location = new System.Drawing.Point(277, 187);
+            this.txtMaNV.Location = new System.Drawing.Point(277, 90);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(176, 22);
@@ -198,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 422);
-            this.Controls.Add(this.txtNgayHL);
+            this.Controls.Add(this.dtmNgayHL);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.txtMaHD);
@@ -218,8 +218,8 @@
             this.Text = "Thêm hợp đồng";
             this.Load += new System.EventHandler(this.ThemHopDong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHD.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgayHL.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNgayHL.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtmNgayHL.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtmNgayHL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaGHD.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaCK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaKH.Properties)).EndInit();
@@ -240,7 +240,7 @@
         private DevExpress.XtraEditors.TextEdit txtMaHD;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.DateEdit txtNgayHL;
+        private DevExpress.XtraEditors.DateEdit dtmNgayHL;
         private DevExpress.XtraEditors.ComboBoxEdit cboMaGHD;
         private DevExpress.XtraEditors.ComboBoxEdit cboMaCK;
         private DevExpress.XtraEditors.ComboBoxEdit cboMaKH;

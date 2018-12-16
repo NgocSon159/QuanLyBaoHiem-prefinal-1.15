@@ -118,6 +118,10 @@ namespace QuanLyBaoHiem
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            foreach (var process in Process.GetProcessesByName("QuanLyBaoHiem"))
+            {
+                process.Kill();
+            }
         }
 
         private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
@@ -202,6 +206,9 @@ namespace QuanLyBaoHiem
             {
                 process.Kill();
             }
+
+
+
         }
     }
 }

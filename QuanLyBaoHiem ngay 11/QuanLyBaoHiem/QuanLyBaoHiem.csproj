@@ -175,12 +175,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLiBaoHiemDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SuaCapDoKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SuaCapDoKH.designer.cs">
-      <DependentUpon>SuaCapDoKH.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThemCapDo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,9 +345,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SuaCapDoKH.resx">
-      <DependentUpon>SuaCapDoKH.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ThemCapDo.resx">
       <DependentUpon>ThemCapDo.cs</DependentUpon>
     </EmbeddedResource>

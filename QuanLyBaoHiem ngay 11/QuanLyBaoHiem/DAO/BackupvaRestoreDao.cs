@@ -21,7 +21,7 @@ namespace QuanLyBaoHiem.DAO
 
             //Execute SQL---------------
             SqlCommand command;
-            command = new SqlCommand(@"backup database Project to disk ='" + ofd.FileName + "' with init,stats=10", connect);
+            command = new SqlCommand(@"backup database QuanLiBaoHiem to disk ='" + ofd.FileName + "' with init,stats=10", connect);
             command.ExecuteNonQuery();
             //-------------------------------------------------------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ namespace QuanLyBaoHiem.DAO
         {
             //Connect SQL-----------
             SqlConnection connect;
-            string con = @"data source=(local)\SQLEXPRESS;initial catalog=QuanLiBaoHiem;integrated security=True;";
+            string con = @"data source=116.106.36.210,1433;initial catalog=QuanLiBaoHiem;User ID=son;Password=123;";
             connect = new SqlConnection(con);
             connect.Open();
             //-----------------------------------------------------------------------------------------
@@ -42,9 +42,9 @@ namespace QuanLyBaoHiem.DAO
             SqlCommand command;
             command = new SqlCommand("use master ", connect);
             command.ExecuteNonQuery();
-            command = new SqlCommand(@"ALTER DATABASE Project SET SINGLE_USER WITH ROLLBACK IMMEDIATE", connect);
+            command = new SqlCommand(@"ALTER DATABASE QuanLiBaoHiem SET SINGLE_USER WITH ROLLBACK IMMEDIATE", connect);
             command.ExecuteNonQuery();
-            command = new SqlCommand(@"RESTORE DATABASE Project FROM DISK = '" + ofd.FileName + "'", connect);
+            command = new SqlCommand(@"RESTORE DATABASE QuanLiBaoHiem FROM DISK = '" + ofd.FileName + "'", connect);
             command.ExecuteNonQuery();
             //--------------------------------------------------------------------------------------------------------
             connect.Close();

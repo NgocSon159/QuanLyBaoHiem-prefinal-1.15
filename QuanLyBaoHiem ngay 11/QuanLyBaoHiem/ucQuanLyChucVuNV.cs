@@ -138,6 +138,7 @@ namespace QuanLyBaoHiem
                     cboTenCV.Text = "";
                     cboMaNVQL.Text = "";
                     cboMaNVQL.Enabled = false;
+                    btnChuyenNVcuaTruongPhong.Visible = false;
                 }
 
             }

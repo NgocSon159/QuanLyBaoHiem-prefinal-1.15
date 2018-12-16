@@ -1,4 +1,5 @@
-﻿using Model.Dao;
+﻿using DevExpress.XtraEditors;
+using Model.Dao;
 using System;
 using System.Data.Entity;
 using System.Windows.Forms;
@@ -26,19 +27,19 @@ namespace QuanLyBaoHiem
             {
                 if(cboMaCV.Text==""||txtMaKH.Text==""||txtTenCV.Text==""||txtTenKH.Text=="")
                 {
-                    MessageBox.Show("Chọn Thông Tin Khách Hàng Cần Sửa");
+                    XtraMessageBox.Show("Chọn Thông Tin Khách Hàng Cần Sửa","Thông Báo");
                 }
                 else
                 {
                     KhachHangDao kh = new KhachHangDao();
                     kh.SuaDoiCapDoKH(txtMaKH.Text, cboMaCV.Text);
-                    MessageBox.Show("Sửa Thành Công");
+                    XtraMessageBox.Show("Sửa Thành Công","Thông Báo");
                     this.refresh();
                 }
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Mời Chọn Thông Tin Cần Sửa");
+                XtraMessageBox.Show("Mời Chọn Thông Tin Cần Sửa","Thông Báo");
             }
         }
         public void refresh()
@@ -99,19 +100,19 @@ namespace QuanLyBaoHiem
             {
                 if (cboMaCV.Text == "" || txtMaKH.Text == "" || txtTenCV.Text == "" || txtTenKH.Text == "")
                 {
-                    MessageBox.Show("Chọn Thông Tin Khách Hàng Cần Sửa");
+                    XtraMessageBox.Show("Chọn Thông Tin Khách Hàng Cần Sửa","Thông Báo");
                 }
                 else
                 {
                     KhachHangDao kh = new KhachHangDao();
                     kh.SuaDoiCapDoKH(txtMaKH.Text, cboMaCV.Text);
-                    MessageBox.Show("Sửa Thành Công");
+                    XtraMessageBox.Show("Sửa Thành Công","Thông Báo");
                     this.refresh();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mời Chọn Thông Tin Cần Sửa");
+                XtraMessageBox.Show("Mời Chọn Thông Tin Cần Sửa","Thông Báo");
             }
         }
     }

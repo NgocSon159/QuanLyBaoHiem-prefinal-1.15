@@ -14,6 +14,12 @@ namespace Model.Dao
         {
             db = new QLBHContext();
         }
+
+        public NguoiThan getNT(string MaNT)
+        {
+            return db.NguoiThans.FirstOrDefault(x => x.MaNT == MaNT);
+        }
+
         public List<NguoiThan> Load()
         {
             return db.NguoiThans.Where(x => x.Status == true).ToList();

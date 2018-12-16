@@ -130,11 +130,11 @@ namespace QuanLyBaoHiem
             loaddanhsach(manvqlhientai);
             if(dsnhanviencanchuyenTP.Count==0)
             {
-                
-                DialogResult dialogResult = XtraMessageBox.Show("Xác nhận", "Bạn đã chuyển hết nhân viên quản lý!! Bạn có muốn thoát?", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
+                DialogResult dialogResult = XtraMessageBox.Show("Bạn đã có thể chuyển chức vụ cho nhân viên " + manvqlhientai,"Thông báo", MessageBoxButtons.OK);
+                if (dialogResult == DialogResult.OK)
                 {
                     f.loaddatabse();
+                    
                     this.Close();
                 }
             }

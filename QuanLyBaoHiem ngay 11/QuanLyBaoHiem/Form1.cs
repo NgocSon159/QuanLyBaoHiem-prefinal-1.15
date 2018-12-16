@@ -117,7 +117,6 @@ namespace QuanLyBaoHiem
                     process.Kill();
                 }
             }
-            
         }
         private void btnLogin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -279,7 +278,7 @@ namespace QuanLyBaoHiem
         private void btnQuanLyCapDoKH_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             ucQuanLyCapDoKH ucQuanLyCapDoKH = new ucQuanLyCapDoKH();
-            AddTabControl(ucQuanLyCapDoKH, "Phân quyền khách hàng", "");            
+            AddTabControl(ucQuanLyCapDoKH, "Phân cấp khách hàng", "");            
         }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)

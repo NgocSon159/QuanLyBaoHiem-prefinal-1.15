@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucQuanLyChucVuNV));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnChuyenNVcuaTruongPhong = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaNV = new DevExpress.XtraEditors.TextEdit();
             this.label3 = new DevExpress.XtraEditors.LabelControl();
@@ -50,7 +51,6 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnChuyenNVcuaTruongPhong = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaNV.Properties)).BeginInit();
@@ -81,6 +81,17 @@
             this.groupControl1.Size = new System.Drawing.Size(1023, 239);
             this.groupControl1.TabIndex = 37;
             this.groupControl1.Text = "Lựa chọn chức vụ";
+            // 
+            // btnChuyenNVcuaTruongPhong
+            // 
+            this.btnChuyenNVcuaTruongPhong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenNVcuaTruongPhong.ImageOptions.Image")));
+            this.btnChuyenNVcuaTruongPhong.Location = new System.Drawing.Point(184, 188);
+            this.btnChuyenNVcuaTruongPhong.Name = "btnChuyenNVcuaTruongPhong";
+            this.btnChuyenNVcuaTruongPhong.Size = new System.Drawing.Size(195, 29);
+            this.btnChuyenNVcuaTruongPhong.TabIndex = 53;
+            this.btnChuyenNVcuaTruongPhong.Text = "Chuyển tiếp nhân viên";
+            this.btnChuyenNVcuaTruongPhong.Visible = false;
+            this.btnChuyenNVcuaTruongPhong.Click += new System.EventHandler(this.btnChuyenNVcuaTruongPhong_Click);
             // 
             // labelControl2
             // 
@@ -298,17 +309,6 @@
             this.simpleButton1.TabIndex = 52;
             this.simpleButton1.Text = "Xóa";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
-            // 
-            // btnChuyenNVcuaTruongPhong
-            // 
-            this.btnChuyenNVcuaTruongPhong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenNVcuaTruongPhong.ImageOptions.Image")));
-            this.btnChuyenNVcuaTruongPhong.Location = new System.Drawing.Point(99, 188);
-            this.btnChuyenNVcuaTruongPhong.Name = "btnChuyenNVcuaTruongPhong";
-            this.btnChuyenNVcuaTruongPhong.Size = new System.Drawing.Size(280, 29);
-            this.btnChuyenNVcuaTruongPhong.TabIndex = 53;
-            this.btnChuyenNVcuaTruongPhong.Text = "Chuyển nhân viên của trưởng phòng";
-            this.btnChuyenNVcuaTruongPhong.Visible = false;
-            this.btnChuyenNVcuaTruongPhong.Click += new System.EventHandler(this.btnChuyenNVcuaTruongPhong_Click);
             // 
             // ucQuanLyChucVuNV
             // 

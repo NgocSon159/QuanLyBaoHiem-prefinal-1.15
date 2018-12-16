@@ -8,6 +8,7 @@ using STSShop.Common;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,10 @@ namespace QuanLyBaoHiem.Linhtinh
             List<string> tencot = exsp.LayTenCot(tenbang);
             try
             {
+                foreach (var process in Process.GetProcessesByName("EXCEL"))
+                {
+                    process.Kill();
+                }
                 OpenFileDialog open = new OpenFileDialog();
                 open.Filter = "Chọn file Excel |*.xls; *.xlsx; *.xlsm";
                 if (open.ShowDialog() == DialogResult.Cancel)
@@ -107,10 +112,18 @@ namespace QuanLyBaoHiem.Linhtinh
             }
             catch (Exception ex)
             {
-                string loi = ex.InnerException.ToString();
-                string[] loichia = loi.Split('\n');
-                string[] loichinh = loichia[0].Split(':');
-                XtraMessageBox.Show(loichinh[2]);
+                if (ex.InnerException!=null)
+                {
+                    string loi = ex.InnerException.ToString();
+                    string[] loichia = loi.Split('\n');
+                    string[] loichinh = loichia[0].Split(':');
+                    XtraMessageBox.Show(loichinh[2]);
+                }
+                else
+                {
+                    XtraMessageBox.Show("File không hợp lệ hoặc sai định dạng!!");
+                }
+                
             }
         }
 

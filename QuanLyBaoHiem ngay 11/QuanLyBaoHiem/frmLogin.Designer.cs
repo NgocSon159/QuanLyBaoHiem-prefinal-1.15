@@ -144,24 +144,24 @@
             // 
             this.simpleButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.simpleButton1.ImageOptions.Image = global::QuanLyBaoHiem.Properties.Resources.cen1;
-            this.simpleButton1.Location = new System.Drawing.Point(446, 236);
+            this.simpleButton1.Location = new System.Drawing.Point(435, 236);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(87, 28);
+            this.simpleButton1.Size = new System.Drawing.Size(103, 28);
             this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Cancel";
+            this.simpleButton1.Text = "Thoát";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
             this.simpleButton2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.simpleButton2.ImageOptions.Image = global::QuanLyBaoHiem.Properties.Resources.DangNhap;
-            this.simpleButton2.Location = new System.Drawing.Point(329, 236);
+            this.simpleButton2.Location = new System.Drawing.Point(313, 236);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(87, 28);
+            this.simpleButton2.Size = new System.Drawing.Size(103, 28);
             this.simpleButton2.TabIndex = 4;
-            this.simpleButton2.Text = "OK";
+            this.simpleButton2.Text = "Đăng nhập";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // frmLogin

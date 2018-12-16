@@ -58,23 +58,20 @@ namespace QuanLyBaoHiem
             {
                 if (txtCMND.Text == "" || txtDiaChi.Text == "" || cboGioiTinh.Text == ""  || txtMaKH.Text == "" || txtNgaySinh.Text == "" || txtSdt.Text == "" || txtTenKH.Text == "" || comboBoxEdit1.Text == "")
                 {
-                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin");
+                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin","Thông Báo");
                 }
                 else
                 {
                     KhachHangDao kh = new KhachHangDao();
                     kh.ThemKH(txtMaKH.Text, txtTenKH.Text, comboBoxEdit1.Text, txtNgaySinh.Text, cboGioiTinh.Text, txtDiaChi.Text, txtSdt.Text, txtCMND.Text, imaloc);
-                    XtraMessageBox.Show("Thêm Thành Công");
+                    XtraMessageBox.Show("Thêm Thành Công","Thông Báo");
                     f.refresh();
                     this.Close();
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                string loi = ex.InnerException.ToString();
-                string[] loichia = loi.Split('\n');
-                string[] loichinh = loichia[0].Split(':');
-                XtraMessageBox.Show(loichinh[2]);
+                XtraMessageBox.Show("Đã có lỗi xảy ra","Thông Báo");
             }
         }
 

@@ -53,9 +53,13 @@ namespace Model.Dao
             kh.Sdt = sdt;
             kh.Status = true;
             kh.CMND = CMND;
-            FileStream f = new FileStream(hinhanh, FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(f);
-            kh.HinhAnh = br.ReadBytes((int)f.Length);
+            if(hinhanh!=null)
+            {
+                FileStream f = new FileStream(hinhanh, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(f);
+                kh.HinhAnh = br.ReadBytes((int)f.Length);
+            }
+            
             db.KhachHangs.Add(kh);
             db.SaveChanges();
         }

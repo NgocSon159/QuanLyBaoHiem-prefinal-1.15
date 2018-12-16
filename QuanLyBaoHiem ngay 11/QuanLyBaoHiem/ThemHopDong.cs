@@ -37,6 +37,7 @@ namespace QuanLyBaoHiem
             txtMaNV.Text = manvhientai;
             loadcombo();
             f = uc;
+            dtmNgayHL.DateTime = DateTime.Now;
         }
 
         public void loadcombo()
@@ -63,14 +64,14 @@ namespace QuanLyBaoHiem
         {
             try
             {
-                if(cboMaCK.Text==""||cboMaGHD.Text==""||txtMaHD.Text==""||cboMaKH.Text==""||txtMaNV.Text==""||txtNgayHL.Text=="")
+                if(cboMaCK.Text==""||cboMaGHD.Text==""||txtMaHD.Text==""||cboMaKH.Text==""||txtMaNV.Text==""||dtmNgayHL.Text=="")
                 {
-                    XtraMessageBox.Show("Điền Đầy Đủ Thông Tin");
+                    XtraMessageBox.Show("Bạn chưa điền đầy đủ thông tin!!");
                 }
                 else
                 {
                     HopDongDao hd = new HopDongDao();
-                    hd.ThemHD(txtMaHD.Text, cboMaGHD.Text, cboMaCK.Text, txtMaNV.Text, cboMaKH.Text, txtNgayHL.Text);
+                    hd.ThemHD(txtMaHD.Text, cboMaGHD.Text, cboMaCK.Text, txtMaNV.Text, cboMaKH.Text, dtmNgayHL.Text);
                     XtraMessageBox.Show("Thêm Thành Công");
                     this.Close();
                     f.loaddatabase();

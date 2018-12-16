@@ -33,7 +33,8 @@ namespace QuanLyBaoHiem
         }
         public void setdatalentextbox(string manv)
         {
-            NhanVien nv = db.NhanViens.Find(manv);
+            QLBHContext moi = new QLBHContext();
+            NhanVien nv = moi.NhanViens.Find(manv);
 
             txtMaNV.Text = nv.MaNV;
             cboMaCV.Text = nv.MaCV;
@@ -87,6 +88,12 @@ namespace QuanLyBaoHiem
             btLuu.Visible = false;
             btHuy.Visible = false;
 
+            //disalble những trường cần thiết
+            txtHoTenNV.Enabled = false;
+            rdioGioiTinh.ReadOnly = false;
+            dtngaysinh.Enabled = false;
+            txtDiaChi.Enabled = false;
+            txtSdt.Enabled = false;
 
         }
         public void loadcomboboxMaCVvacomboboxQuyenhanvacomboboxMaNVQL()
@@ -132,26 +139,43 @@ namespace QuanLyBaoHiem
 
         private void btHuy_Click(object sender, EventArgs e)
         {
-            setalltextboxUneditable();
+            
             setdatalentextbox(txtMaNV.Text);
+            setalltextboxUneditable();
             btSua.Visible = true;
         }
 
         private void btLuu_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = XtraMessageBox.Show("Xác nhận", "Bạn thực sự muốn thay đổi?", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            try
             {
-                NhanvienDao nvdao = new NhanvienDao();
-                bool gioitinh = true;
-                if (rdioGioiTinh.SelectedIndex == 1)
-                {
-                    gioitinh = false;
-                }
-                nvdao.suathongtincanhan(txtMaNV.Text, txtHoTenNV.Text, txtSdt.Text, gioitinh, txtDiaChi.Text, dtngaysinh.DateTime);
 
-                XtraMessageBox.Show("Đã sửa thành công!!");
-                //f.tattab();
+
+                DialogResult dialogResult = XtraMessageBox.Show("Xác nhận", "Bạn thực sự muốn thay đổi?", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    NhanvienDao nvdao = new NhanvienDao();
+                    bool gioitinh = true;
+                    if (rdioGioiTinh.SelectedIndex == 1)
+                    {
+                        gioitinh = false;
+                    }
+                    nvdao.suathongtincanhan(txtMaNV.Text, txtHoTenNV.Text, txtSdt.Text, gioitinh, txtDiaChi.Text, dtngaysinh.DateTime);
+
+                    XtraMessageBox.Show("Đã sửa thành công!!");
+                    //f.tattab();
+                    
+                    setalltextboxUneditable();
+                    
+                    btSua.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
 
 

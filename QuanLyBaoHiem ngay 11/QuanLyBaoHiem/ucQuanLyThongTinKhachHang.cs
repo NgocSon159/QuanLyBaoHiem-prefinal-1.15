@@ -116,7 +116,7 @@ namespace QuanLyBaoHiem
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Đã Có Lỗi Xảy Ra");
+                XtraMessageBox.Show("Đã Có Lỗi Xảy Ra","Thông Báo");
             }
             
         }
@@ -165,7 +165,7 @@ namespace QuanLyBaoHiem
         {
             if (txtMaKH.Text == "")
             {
-                XtraMessageBox.Show("Bạn chưa chọn dòng!!");
+                XtraMessageBox.Show("Bạn chưa chọn dòng!!","Thông Báo");
             }
             else
             {
@@ -175,7 +175,7 @@ namespace QuanLyBaoHiem
                     KhachHangDao kh = new KhachHangDao();
                     kh.xoakhachhang(txtMaKH.Text);
                     
-                    XtraMessageBox.Show("Đã xóa thành công!!");
+                    XtraMessageBox.Show("Đã xóa thành công!!", "Thông Báo");
                     this.refresh();
                     resettextbox();
 
@@ -202,7 +202,7 @@ namespace QuanLyBaoHiem
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                XtraMessageBox.Show(ex.Message, "Thông Báo");
             }
         }
         internal void xulychuoibinary()
@@ -216,7 +216,7 @@ namespace QuanLyBaoHiem
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                XtraMessageBox.Show(ex.Message,"Thông Báo");
             }
         }
 
@@ -258,7 +258,7 @@ namespace QuanLyBaoHiem
             {
                 if (txtMaKH.Text == "" || txtCMND.Text == "" || txtDiaChi.Text == "" || cboGioiTinh.Text == "" || dtmNgaySinh.Text == "" || txtSdt.Text == "" || cboTenCD.Text == "" || txtTenKH.Text == "")
                 {
-                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin");
+                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin", "Thông Báo");
                 }
                 else
                 {
@@ -267,7 +267,7 @@ namespace QuanLyBaoHiem
                     CapDoDao cd = new CapDoDao();
                     MaCD = cd.MaCD(cboTenCD.Text);
                     kh.suakhachhang(txtMaKH.Text, txtTenKH.Text, MaCD, dtmNgaySinh.DateTime, cboGioiTinh.Text, txtDiaChi.Text, txtSdt.Text, txtCMND.Text, ima);
-                    XtraMessageBox.Show("Sửa Thành Công");
+                    XtraMessageBox.Show("Sửa Thành Công", "Thông Báo");
                     this.refresh();
                 }
 
@@ -308,54 +308,46 @@ namespace QuanLyBaoHiem
         {
             try
             {
-
-                if(gridView1.RowCount>0)
+                using (SaveFileDialog saveDialog = new SaveFileDialog())
                 {
-                    using (SaveFileDialog saveDialog = new SaveFileDialog())
+                    saveDialog.Filter = "Excel (2003)(.xls)|*.xls|Excel (2010) (.xlsx)|*.xlsx ";
+                    if (saveDialog.ShowDialog() != DialogResult.Cancel)
                     {
-                        saveDialog.Filter = "Excel (2003)(.xls)|*.xls|Excel (2010) (.xlsx)|*.xlsx ";
-                        if (saveDialog.ShowDialog() != DialogResult.Cancel)
+                        string exportFilePath = saveDialog.FileName;
+                        string fileExtenstion = new FileInfo(exportFilePath).Extension;
+
+                        switch (fileExtenstion)
                         {
-                            string exportFilePath = saveDialog.FileName;
-                            string fileExtenstion = new FileInfo(exportFilePath).Extension;
+                            case ".xls":
+                                gridView1.ExportToXls(exportFilePath);
+                                break;
+                            case ".xlsx":
+                                gridView1.ExportToXlsx(exportFilePath);
+                                break;
 
-                            switch (fileExtenstion)
+                            default:
+                                break;
+                        }
+
+                        if (File.Exists(exportFilePath))
+                        {
+                            try
                             {
-                                case ".xls":
-                                    gridView1.ExportToXls(exportFilePath);
-                                    break;
-                                case ".xlsx":
-                                    gridView1.ExportToXlsx(exportFilePath);
-                                    break;
-
-                                default:
-                                    break;
+                                //Thử mở file và để chương trình chọn cách để export.
+                                System.Diagnostics.Process.Start(exportFilePath);
                             }
-
-                            if (File.Exists(exportFilePath))
+                            catch
                             {
-                                try
-                                {
-                                    //Thử mở file và để chương trình chọn cách để export.
-                                    System.Diagnostics.Process.Start(exportFilePath);
-                                }
-                                catch
-                                {
-                                    String msg = "Không thể mở file." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
-                                    MessageBox.Show(msg, "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                }
-                            }
-                            else
-                            {
-                                String msg = "File không thể lưu." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
+                                String msg = "Không thể mở file." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
                                 MessageBox.Show(msg, "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
+                        else
+                        {
+                            String msg = "File không thể lưu." + Environment.NewLine + Environment.NewLine + "Path: " + exportFilePath;
+                            MessageBox.Show(msg, "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                }
-                else
-                {
-                    XtraMessageBox.Show("Không có gì để export!!!");
                 }
 
             }

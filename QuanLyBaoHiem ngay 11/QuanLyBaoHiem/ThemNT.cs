@@ -46,20 +46,48 @@ namespace QuanLyBaoHiem
             {
                 if (txtSDT.Text==""||txtCMND.Text == "" || txtDiaChi.Text == "" || txtGioiTinh.Text == ""  || txtMaNT.Text == "" || txtNgaySinh.Text == ""  || cboMaKH.Text == ""||txtTenNT.Text=="" )
                 {
-                    MessageBox.Show("Mời Nhập Đủ Thông Tin");
+                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin","Thông Báo");
                 }
                 else
                 {
                     if (cboMaKH.Text == txtMaKHRieng.Text)
                     {
-                        MessageBox.Show("Nhập Lỗi Hai Mã Khách Hàng");
+                        MessageBox.Show("Nhập Lỗi Hai Mã Khách Hàng","Thông Báo");
                     }
                     else
                     {
-                        NguoiThanDao ng = new NguoiThanDao();
-                        ng.ThemNT(txtMaNT.Text, cboMaKH.Text, txtTenNT.Text, txtNgaySinh.DateTime, txtGioiTinh.Text, txtDiaChi.Text, txtCMND.Text, txtMaKHRieng.Text,txtSDT.Text);
-                        MessageBox.Show("Thêm Thành Công");
-                        this.Close();
+                        if(txtMaKHRieng.Text=="")
+                        {
+                            NguoiThanDao ng = new NguoiThanDao();
+                            ng.ThemNT(txtMaNT.Text, cboMaKH.Text, txtTenNT.Text, txtNgaySinh.DateTime, txtGioiTinh.Text, txtDiaChi.Text, txtCMND.Text, txtMaKHRieng.Text, txtSDT.Text);
+                            XtraMessageBox.Show("Thêm Thành Công","Thông Báo");
+                            this.Close();
+                        }
+                        else
+                        {
+                            KhachHangDao kh = new KhachHangDao();
+                            var model=kh.getKH(txtMaKHRieng.Text);
+                            string gioitinh;
+                            if (model.GioiTinh == true)
+                            {
+                                gioitinh = "Nam";
+                            }
+                            else gioitinh = "Nữ";
+                            DateTime dateTime = Convert.ToDateTime(model.NgaySinh);
+                            if(model.TenKH!=txtTenNT.Text||dateTime!=txtNgaySinh.DateTime||model.Sdt!=txtSDT.Text||model.DiaChi!=txtDiaChi.Text||gioitinh!=txtGioiTinh.Text||model.CMND!=txtCMND.Text)
+                            {
+                                XtraMessageBox.Show("Thông Tin Người Thân Bị Sai", "Thông Báo");
+                                laythongtin();
+                            }
+                            else
+                            {
+                                NguoiThanDao ng = new NguoiThanDao();
+                                ng.ThemNT(txtMaNT.Text, cboMaKH.Text, txtTenNT.Text, txtNgaySinh.DateTime, txtGioiTinh.Text, txtDiaChi.Text, txtCMND.Text, txtMaKHRieng.Text, txtSDT.Text);
+                                XtraMessageBox.Show("Thêm Thành Công","Thông Báo");
+                                this.Close();
+                            }
+                        }
+                        
                     }
                 }
                 f.refresh();
@@ -72,7 +100,24 @@ namespace QuanLyBaoHiem
                 XtraMessageBox.Show(loichinh[2]);
             }
         }
-
+        private void laythongtin()
+        {
+            KhachHangDao kh = new KhachHangDao();
+            var model = kh.getKH(txtMaKHRieng.Text);
+            txtTenNT.Text = model.TenKH;
+            txtNgaySinh.DateTime = Convert.ToDateTime(model.NgaySinh);
+            txtSDT.Text = model.Sdt;
+            txtDiaChi.Text = model.DiaChi;
+            if (model.GioiTinh == true)
+            {
+                txtGioiTinh.Text = "Nam";
+            }
+            else
+            {
+                txtGioiTinh.Text = "Nữ";
+            }
+            txtCMND.Text = model.CMND;
+        }
         private void labelControl1_Click(object sender, EventArgs e)
         {
 
@@ -94,11 +139,72 @@ namespace QuanLyBaoHiem
             foreach (var item in listmakh)
             {
                 cboMaKH.Properties.Items.Add(item);
+                txtMaKHRieng.Properties.Items.Add(item);
             }
+            
+            
         }
         private void ThemNT_Load(object sender, EventArgs e)
         {
             themcombobox();
+        }
+
+        private void txtDiaChi_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void clear(ComboBoxEdit comboBoxEdit)
+        {
+            comboBoxEdit.Properties.Items.Clear();
+        }
+        private void cboMaKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var temp = cboMaKH.Text;
+            clear(txtMaKHRieng);
+            List<string> listmakh = new List<string>();
+            listmakh = db.KhachHangs.Where(p => p.Status == true).Select(l => l.MaKH).ToList();
+            foreach(var item in listmakh)
+            {
+                if(item!=temp)
+                {
+                    txtMaKHRieng.Properties.Items.Add(item);
+                }
+            }
+        }
+
+        private void txtMaKHRieng_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMaKHRieng_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var temp = txtMaKHRieng.Text;
+            clear(cboMaKH);
+            List<string> listmakh = new List<string>();
+            listmakh = db.KhachHangs.Where(p => p.Status == true).Select(l => l.MaKH).ToList();
+            foreach (var item in listmakh)
+            {
+                if (item != temp)
+                {
+                    cboMaKH.Properties.Items.Add(item);
+                }
+            }
+            KhachHangDao kh = new KhachHangDao();
+            var model=kh.getKH(txtMaKHRieng.Text);
+            txtTenNT.Text = model.TenKH;
+            txtNgaySinh.DateTime = Convert.ToDateTime(model.NgaySinh);
+            txtSDT.Text = model.Sdt;
+            txtDiaChi.Text = model.DiaChi;
+            if(model.GioiTinh==true)
+            {
+                txtGioiTinh.Text = "Nam";
+            }
+            else
+            {
+                txtGioiTinh.Text = "Nữ";
+            }
+            txtCMND.Text = model.CMND;
         }
     }
 }

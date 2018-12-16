@@ -244,7 +244,7 @@
             // 
             // btnQuanLyCapDoKH
             // 
-            this.btnQuanLyCapDoKH.Caption = "Phân Quyền Khách Hàng";
+            this.btnQuanLyCapDoKH.Caption = "Phân Cấp Khách Hàng";
             this.btnQuanLyCapDoKH.Id = 4;
             this.btnQuanLyCapDoKH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanLyCapDoKH.ImageOptions.Image")));
             this.btnQuanLyCapDoKH.LargeWidth = 100;
@@ -478,7 +478,7 @@
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.btnLogout);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "Dữ liệu";
+            this.ribbonPageGroup7.Text = "Hệ thống";
             // 
             // ribbonPage2
             // 
@@ -491,7 +491,6 @@
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.btnQuanLyThongTinNV);
             this.ribbonPageGroup2.ItemLinks.Add(this.btnQuanLyChucVu);
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnQuanlyCapdo);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Quản lý";
             // 
@@ -522,6 +521,7 @@
             this.ribbonPageGroup11.ItemLinks.Add(this.btnQuanLyKhachHang);
             this.ribbonPageGroup11.ItemLinks.Add(this.btnQuanLyCapDoKH);
             this.ribbonPageGroup11.ItemLinks.Add(this.btnThongTinNhanVien);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnQuanlyCapdo);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Quản lý";
             // 
