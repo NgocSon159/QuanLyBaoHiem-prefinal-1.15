@@ -80,7 +80,7 @@ namespace QuanLyBaoHiem
 
                 if (txtHoTenNV.Text == "" || txtemail.Text == "" || txtDiaChi.Text == "" || txtSdt.Text == "" || dtngaysinh.Text == "")
                 {
-                    XtraMessageBox.Show("Hãy điền đầy đủ thông tin!");
+                    XtraMessageBox.Show("Bạn chưa điền đầy đủ thông tin!");
                 }
                 else
                 {

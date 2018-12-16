@@ -77,7 +77,7 @@
             this.btnDoiMK.Location = new System.Drawing.Point(281, 321);
             this.btnDoiMK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(140, 47);
+            this.btnDoiMK.Size = new System.Drawing.Size(150, 47);
             this.btnDoiMK.TabIndex = 15;
             this.btnDoiMK.Text = "Đổi Mật Khẩu";
             this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);

@@ -133,31 +133,38 @@ namespace QuanLyBaoHiem
 
         private void dgvNhanVien_Click(object sender, EventArgs e)
         {
-            txtMaNV.Text = gridView1.GetFocusedRowCellValue(colMaNV).ToString();
-            txtHoTenNV.Text= gridView1.GetFocusedRowCellValue(colTenNV).ToString();
-
-            string macv= gridView1.GetFocusedRowCellValue(colMaCV).ToString();
-            cboQuyenHan.Text = listchucvu.Where(p => p.MaCV == macv).Select(l => l.TenCV).SingleOrDefault();
-
-            txtSdt.Text= gridView1.GetFocusedRowCellValue(colSdt).ToString();
-            txtEmail.Text = gridView1.GetFocusedRowCellValue(colEmail).ToString();
-            string gioitinh= gridView1.GetFocusedRowCellValue(colGioiTinh).ToString();
-           
-            if (gioitinh.Equals("True"))
+            if(gridView1.RowCount>0)
             {
-                cboGioiTinh.SelectedIndex=0;
-            }
-            else cboGioiTinh.SelectedIndex = 1;
-            txtDiaChi.Text= gridView1.GetFocusedRowCellValue(colDiaChi).ToString();
-            cboMaNVQL.Text= gridView1.GetFocusedRowCellValue(colMaNVQL).ToString();
-            
-            string ngaysinh= gridView1.GetFocusedRowCellValue(colNgaySinh).ToString();
-            DateTime ngaysinhnhat = DateTime.Parse(ngaysinh);
-            dtngaysinh.DateTime = ngaysinhnhat;
+                txtMaNV.Text = gridView1.GetFocusedRowCellValue(colMaNV).ToString();
+                txtHoTenNV.Text = gridView1.GetFocusedRowCellValue(colTenNV).ToString();
 
-            enabletextbox();
-            btnLuu.Visible = true;
-            btnHuy.Visible = true;
+                string macv = gridView1.GetFocusedRowCellValue(colMaCV).ToString();
+                cboQuyenHan.Text = listchucvu.Where(p => p.MaCV == macv).Select(l => l.TenCV).SingleOrDefault();
+
+                txtSdt.Text = gridView1.GetFocusedRowCellValue(colSdt).ToString();
+                txtEmail.Text = gridView1.GetFocusedRowCellValue(colEmail).ToString();
+                string gioitinh = gridView1.GetFocusedRowCellValue(colGioiTinh).ToString();
+
+                if (gioitinh.Equals("True"))
+                {
+                    cboGioiTinh.SelectedIndex = 0;
+                }
+                else cboGioiTinh.SelectedIndex = 1;
+                txtDiaChi.Text = gridView1.GetFocusedRowCellValue(colDiaChi).ToString();
+                cboMaNVQL.Text = gridView1.GetFocusedRowCellValue(colMaNVQL).ToString();
+
+                string ngaysinh = gridView1.GetFocusedRowCellValue(colNgaySinh).ToString();
+                DateTime ngaysinhnhat = DateTime.Parse(ngaysinh);
+                dtngaysinh.DateTime = ngaysinhnhat;
+
+                enabletextbox();
+                btnLuu.Visible = true;
+                btnHuy.Visible = true;
+            }
+            else
+            {
+                XtraMessageBox.Show("Không có gì để hiện thị!!");
+            }
 
         }
 

@@ -88,7 +88,7 @@ namespace QuanLyBaoHiem.Linhtinh
                                     }
                                     else
                                     {
-                                        this.ImportHD(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), Convert.ToDateTime(dr[4]));
+                                        this.ImportHD(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), Convert.ToDateTime(dr[3]));
                                         excelReader.Close();
                                         stream.Close();
 
@@ -185,7 +185,7 @@ namespace QuanLyBaoHiem.Linhtinh
             db.SaveChanges();
         }
 
-        public void ImportHD( string MaGHD, string MaCK, string MaNV, string MaKH, DateTime NgayHL)
+        public void ImportHD( string MaGHD, string MaCK, string MaKH, DateTime NgayHL)
         {
             HopDongDao hddao = new HopDongDao();
 
@@ -193,7 +193,7 @@ namespace QuanLyBaoHiem.Linhtinh
             hd.MaHD = hddao.getlasthopdong();
             hd.MaGoiHD = MaGHD;
             hd.MaChuKy = MaCK;
-            hd.MaNV = MaNV;
+            hd.MaNV = manvhientai;
             hd.MaKHChinh = MaKH;
             hd.NgayHieuLuc = NgayHL;
             hd.Status = true;

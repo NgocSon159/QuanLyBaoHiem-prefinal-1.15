@@ -38,7 +38,7 @@ namespace QuanLyBaoHiem
                 gridChucvu.DataSource = (from a in dbContext.NhanViens
                                           join b in dbContext.ChucVus
                                           on a.MaCV equals b.MaCV
-                                          where a.Status==true && a.MaCV == "TP" || a.MaCV == "NV"
+                                          where a.Status==true && a.MaNVQuanLi!=null && (a.MaCV == "TP" || a.MaCV == "NV")
                                          
                                           select new
                                           {

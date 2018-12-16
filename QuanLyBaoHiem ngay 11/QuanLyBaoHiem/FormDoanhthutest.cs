@@ -244,7 +244,15 @@ namespace QuanLyBaoHiem
             else
             {
                 cleardatadoanhthu();
-                ve(datetu.DateTime, dateden.DateTime);
+                if(datetu.DateTime.Year>dateden.DateTime.Year)
+                {
+                    XtraMessageBox.Show("Năm đến phải lớn hơn năm tới!!!");
+                }
+                else
+                {
+                    ve(datetu.DateTime, dateden.DateTime);
+                }
+                
             }
             
         }

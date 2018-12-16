@@ -62,14 +62,14 @@ namespace QuanLyBaoHiem
             }
             else
             {
-                if (cboTenBang.SelectedIndex == 0)
+                if (cboTenBang.Text=="Nhân viên")
                 {
                     XuatfileExcelmau xuatfile = new XuatfileExcelmau();
                     xuatfile.xuatexcelmau("NhanVien");
                 }
                 else
                 {
-                    if (cboTenBang.SelectedIndex == 1)
+                    if (cboTenBang.Text == "Khách hàng")
                     {
                         XuatfileExcelmau xuatfile = new XuatfileExcelmau();
                         xuatfile.xuatexcelmau("KhachHang");
@@ -97,14 +97,14 @@ namespace QuanLyBaoHiem
             }
             else
             {
-                if (cboTenBang.SelectedIndex == 0)
+                if (cboTenBang.Text == "Nhân viên")
                 {
                     ImportExcel xuatfile = new ImportExcel();
                     xuatfile.importfileExcel("NhanVien",manvhientai);
                 }
                 else
                 {
-                    if (cboTenBang.SelectedIndex == 1)
+                    if (cboTenBang.Text == "Khách hàng")
                     {
                         ImportExcel xuatfile = new ImportExcel();
                         xuatfile.importfileExcel("KhachHang","");
@@ -112,7 +112,7 @@ namespace QuanLyBaoHiem
                     else
                     {
                         ImportExcel xuatfile = new ImportExcel();
-                        xuatfile.importfileExcel("HopDong","");
+                        xuatfile.importfileExcel("HopDong", manvhientai);
 
                     }
                 }

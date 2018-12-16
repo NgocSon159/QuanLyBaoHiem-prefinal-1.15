@@ -50,7 +50,7 @@ namespace QuanLyBaoHiem
                 ChuKyThanhToanDao ckttd = new ChuKyThanhToanDao();
                 if(cboSothang.Text=="" || txtMaCK.Text=="")
                 {
-                    XtraMessageBox.Show("Nhập Đầy Đủ Thông Tin");
+                    XtraMessageBox.Show("Bạn chưa điển đầy đủ thông tin!!");
                 }
                 else
                 {

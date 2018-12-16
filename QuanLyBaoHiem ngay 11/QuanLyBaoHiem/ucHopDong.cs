@@ -96,111 +96,119 @@ namespace QuanLyBaoHiem
 
         private void gridControl2_Click(object sender, EventArgs e)
         {
-            if(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHD")==null)
+            if (gridView1.RowCount > 0)
             {
-                txtMaHD.Text = "";
+
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHD") == null)
+                {
+                    txtMaHD.Text = "";
+                }
+                else
+                {
+                    txtMaHD.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHD").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaGoiHD") == null)
+                {
+                    cboMaGoiHD.Text = "";
+                }
+                else
+                {
+                    cboMaGoiHD.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaGoiHD").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaChuKy") == null)
+                {
+                    cboMaChuKy.Text = "";
+                }
+                else
+                {
+                    cboMaChuKy.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaChuKy").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaNV") == null)
+                {
+                    txtMaNV.Text = "";
+                }
+                else
+                {
+                    txtMaNV.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaNV").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaKHChinh") == null)
+                {
+                    cboMaKH.Text = "";
+                }
+                else
+                {
+                    cboMaKH.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaKHChinh").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "NgayHieuLuc") == null)
+                {
+                    dtmNgayHieuLuc.Text = "";
+                }
+                else
+                {
+                    string ngayhieuluc = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "NgayHieuLuc").ToString();
+                    DateTime ngaysinhnhat = DateTime.Parse(ngayhieuluc);
+                    dtmNgayHieuLuc.DateTime = ngaysinhnhat;
+
+
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.MucPhi") == null)
+                {
+                    txtMucPhi.Text = "";
+                }
+                else
+                {
+                    txtMucPhi.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.MucPhi").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.GiaTriBaoHiem") == null)
+                {
+                    txtGiaTriBaoHiem.Text = "";
+                }
+                else
+                {
+                    txtGiaTriBaoHiem.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.GiaTriBaoHiem").ToString();
+                }
+
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.ThoiHanBaoHiem") == null)
+                {
+                    txtThoiHanBaoHiem.Text = "";
+                }
+                else
+                {
+                    txtThoiHanBaoHiem.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.ThoiHanBaoHiem").ToString();
+                }
+
+
+                NhanvienDao nvdao = new NhanvienDao();
+                if (nvdao.getchucvutunhanvien(manvhientai) == "QL" || nvdao.getchucvutunhanvien(manvhientai) == "TP" || gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHD") == null)
+                {
+                    btnSua.Visible = false;
+                    btnHuy.Visible = false;
+                }
+                else
+                {
+                    dtmNgayHieuLuc.Enabled = true;
+                    cboMaChuKy.Enabled = true;
+                    cboMaGoiHD.Enabled = true;
+                    cboMaKH.Enabled = true;
+
+
+
+                    btnSua.Visible = true;
+                    btnHuy.Visible = true;
+                }
             }
             else
             {
-                txtMaHD.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHD").ToString();
+                XtraMessageBox.Show("Không có gì để hiện thị!!!");
             }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaGoiHD") == null)
-            {
-                cboMaGoiHD.Text = "";
-            }
-            else
-            {
-                cboMaGoiHD.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaGoiHD").ToString();
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaChuKy") == null)
-            {
-                cboMaChuKy.Text = "";
-            }
-            else
-            {
-                cboMaChuKy.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaChuKy").ToString();
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaNV") == null)
-            {
-                txtMaNV.Text = "";
-            }
-            else
-            {
-                txtMaNV.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaNV").ToString();
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaKHChinh") == null)
-            {
-                cboMaKH.Text = "";
-            }
-            else
-            {
-                cboMaKH.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaKHChinh").ToString();
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "NgayHieuLuc") == null)
-            {
-                dtmNgayHieuLuc.Text="";
-            }
-            else
-            {
-                string ngayhieuluc = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "NgayHieuLuc").ToString();
-                DateTime ngaysinhnhat = DateTime.Parse(ngayhieuluc);
-                dtmNgayHieuLuc.DateTime = ngaysinhnhat;
-
-                
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.MucPhi") == null)
-            {
-                txtMucPhi.Text = "";
-            }
-            else
-            {
-                txtMucPhi.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.MucPhi").ToString();
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.GiaTriBaoHiem") == null)
-            {
-                txtGiaTriBaoHiem.Text = "";
-            }
-            else
-            {
-                txtGiaTriBaoHiem.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.GiaTriBaoHiem").ToString();
-            }
-
-            if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.ThoiHanBaoHiem") == null)
-            {
-                txtThoiHanBaoHiem.Text = "";
-            }
-            else
-            {
-                txtThoiHanBaoHiem.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "GoiHopDong.ThoiHanBaoHiem").ToString();
-            }
-
-            
-            NhanvienDao nvdao = new NhanvienDao();
-            if (nvdao.getchucvutunhanvien(manvhientai) == "QL" || nvdao.getchucvutunhanvien(manvhientai) == "TP" || gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHD") == null)
-            {
-                btnSua.Visible = false;
-                btnHuy.Visible = false;
-            }
-            else
-            {
-                dtmNgayHieuLuc.Enabled = true;
-                cboMaChuKy.Enabled = true;
-                cboMaGoiHD.Enabled = true;
-                cboMaKH.Enabled = true;
-
-
-
-                btnSua.Visible = true;
-                btnHuy.Visible = true;
-            }
-            
         }
         
         public void settextboxchoadminvatruongphong()

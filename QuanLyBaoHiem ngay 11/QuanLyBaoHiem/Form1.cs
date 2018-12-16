@@ -55,6 +55,7 @@ namespace QuanLyBaoHiem
             btnLogin.Links[0].Visible = false;
 
             btnThongTinNhanVien.Links[0].Visible = false;
+            ribbonPhuchoi.Visible = false;
 
         }
         public void phanquyenTruongPhong()
@@ -310,7 +311,9 @@ namespace QuanLyBaoHiem
         private void btDoanhthu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormDoanhthutest doanhthu = new FormDoanhthutest();
+            this.tattab();
             doanhthu.ShowDialog();
+
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -322,6 +325,7 @@ namespace QuanLyBaoHiem
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormImportExcel f = new FormImportExcel(taikhoanhientai);
+            this.tattab();
             f.ShowDialog();
         }
 

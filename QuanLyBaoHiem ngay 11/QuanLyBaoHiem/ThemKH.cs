@@ -58,7 +58,7 @@ namespace QuanLyBaoHiem
             {
                 if (txtCMND.Text == "" || txtDiaChi.Text == "" || cboGioiTinh.Text == ""  || txtMaKH.Text == "" || txtNgaySinh.Text == "" || txtSdt.Text == "" || txtTenKH.Text == "" || comboBoxEdit1.Text == "")
                 {
-                    XtraMessageBox.Show("Mời Nhập Đủ Thông Tin","Thông Báo");
+                    XtraMessageBox.Show("Bạn chưa điền đầy đủ thông tin!!","Thông Báo");
                 }
                 else
                 {
@@ -69,9 +69,12 @@ namespace QuanLyBaoHiem
                     this.Close();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                XtraMessageBox.Show("Đã có lỗi xảy ra","Thông Báo");
+                string loi = ex.InnerException.ToString();
+                string[] loichia = loi.Split('\n');
+                string[] loichinh = loichia[0].Split(':');
+                XtraMessageBox.Show(loichinh[2]);
             }
         }
 

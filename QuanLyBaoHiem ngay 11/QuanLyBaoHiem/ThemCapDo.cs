@@ -26,7 +26,7 @@ namespace QuanLyBaoHiem
             try
             {
                 if (txtMaCD.Text == "" || txtTenCD.Text == "" )
-                    XtraMessageBox.Show("Điền đầy đủ thông tin", "Thông báo");
+                    XtraMessageBox.Show("Bạn chưa điền đầy đủ thông tin", "Thông báo");
                 else
                 {
                     if(cdd.kiemtratontai(txtMaCD.Text)==0)

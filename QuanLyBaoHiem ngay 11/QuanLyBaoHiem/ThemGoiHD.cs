@@ -45,7 +45,7 @@ namespace QuanLyBaoHiem
 
                 if (txtMaGHD.Text == "" || txtMucPhi.Text == "" || txtGiaTriBaoHiem.Text == "" ||
                         txtThoiHanBaoHiem.Text == "" || txtThoiHanDongPhi.Text == "")
-                    XtraMessageBox.Show("Điền đầy đủ thông tin", "Thông báo");
+                    XtraMessageBox.Show("Bạn chưa điền đầy đủ thông tin", "Thông báo");
                 else
                 {
 
