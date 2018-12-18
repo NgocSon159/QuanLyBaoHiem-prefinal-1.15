@@ -74,7 +74,7 @@
             this.btnDoiMK.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoiMK.Appearance.Options.UseFont = true;
             this.btnDoiMK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK.ImageOptions.Image")));
-            this.btnDoiMK.Location = new System.Drawing.Point(281, 321);
+            this.btnDoiMK.Location = new System.Drawing.Point(310, 321);
             this.btnDoiMK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.Size = new System.Drawing.Size(150, 47);
@@ -87,7 +87,7 @@
             this.btnHuy.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Appearance.Options.UseFont = true;
             this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.Image")));
-            this.btnHuy.Location = new System.Drawing.Point(483, 321);
+            this.btnHuy.Location = new System.Drawing.Point(512, 321);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(140, 47);
@@ -97,7 +97,7 @@
             // 
             // txtReNewPass
             // 
-            this.txtReNewPass.Location = new System.Drawing.Point(378, 261);
+            this.txtReNewPass.Location = new System.Drawing.Point(407, 261);
             this.txtReNewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReNewPass.Name = "txtReNewPass";
             this.txtReNewPass.Properties.Mask.EditMask = "[a-zA-Z0-9]+";
@@ -107,7 +107,7 @@
             // 
             // txtNewPass
             // 
-            this.txtNewPass.Location = new System.Drawing.Point(378, 206);
+            this.txtNewPass.Location = new System.Drawing.Point(407, 206);
             this.txtNewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.Properties.Mask.EditMask = "[a-zA-Z0-9]+";
@@ -117,7 +117,7 @@
             // 
             // txtOldPass
             // 
-            this.txtOldPass.Location = new System.Drawing.Point(378, 150);
+            this.txtOldPass.Location = new System.Drawing.Point(407, 150);
             this.txtOldPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtOldPass.Name = "txtOldPass";
             this.txtOldPass.Properties.Mask.EditMask = "[a-zA-Z0-9]+";
@@ -129,7 +129,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(234, 261);
+            this.labelControl4.Location = new System.Drawing.Point(263, 261);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(122, 19);
@@ -140,7 +140,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(234, 206);
+            this.labelControl3.Location = new System.Drawing.Point(263, 206);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(99, 19);
@@ -151,7 +151,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(234, 150);
+            this.labelControl2.Location = new System.Drawing.Point(263, 150);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(89, 19);
@@ -164,7 +164,7 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(419, 76);
+            this.labelControl1.Location = new System.Drawing.Point(448, 76);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(148, 26);

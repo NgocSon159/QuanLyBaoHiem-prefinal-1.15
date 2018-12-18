@@ -88,7 +88,7 @@ namespace QuanLyBaoHiem
             ribbonThongke.Visible = false;
             ribbonPhuchoi.Visible = false;
             ribbonPageGroup2.Visible = false;
-            if(taikhoanhientai=="NV0011")
+            if(taikhoanhientai== "NVIT")
             {
                 btnInfor.Links[0].Visible = false;
                 ribbonPage2.Visible = false;
